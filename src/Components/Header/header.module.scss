@@ -1,0 +1,40 @@
+.header {
+  padding: 21px 16px 0 16px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+}
+
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 18px;
+
+  &__top,
+  &__middle {
+    height: 1px;
+    background: #000000;
+    margin-bottom: 6px;
+  }
+
+  &__bottom {
+    height: 1px;
+    background: #000000;
+  }
+
+  &:hover {
+    .btn__top,
+    .btn__middle,
+    .btn__bottom {
+      background: #849C9C;
+    }
+  }
+}
+
