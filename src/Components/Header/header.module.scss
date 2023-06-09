@@ -20,11 +20,11 @@
 }
 
 .logo {
-  width: 116px;
-  height: 15px;
+  width: 150px;
+  height: 36px;
   @media(min-width: 1920px) {
-    width: 145px;
-    height: 42px;
+    width: 204px;
+    height: 55.77px;
     margin-right: 342px;
   }
 }
@@ -59,6 +59,7 @@
     padding-top: 24px;
     padding-left: 36px;
     transition: right 0.3s ease-in-out;
+    z-index: 1;
   }
 }
 
