@@ -1,40 +1,79 @@
+@import "src/styles/variables";
+
 .header {
   padding: 21px 16px 0 16px;
+  margin-bottom: 45px;
+  @media(min-width: 1920px) {
+    padding: 58px 319px 0 320px;
+    margin-bottom: 101.63px;
+  }
 
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media(min-width: 1920px) {
+      justify-content: initial;
 
-  }
-}
-
-
-.btn {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 18px;
-
-  &__top,
-  &__middle {
-    height: 1px;
-    background: #000000;
-    margin-bottom: 6px;
-  }
-
-  &__bottom {
-    height: 1px;
-    background: #000000;
-  }
-
-  &:hover {
-    .btn__top,
-    .btn__middle,
-    .btn__bottom {
-      background: #849C9C;
     }
   }
 }
 
+.logo {
+  width: 116px;
+  height: 15px;
+  @media(min-width: 1920px) {
+    width: 145px;
+    height: 42px;
+    margin-right: 342px;
+  }
+}
+
+.burgerButton:active path {
+  stroke: $darkGreen;
+}
+
+.closeButton:active {
+  fill: $darkGreen;
+
+  path {
+    stroke: white;
+  }
+}
+.navMenu {
+  @media(min-width: 1920px) {
+ display: none;
+  }
+}
+.navMenuMobile {
+  position: relative;
+
+  &__menu {
+    position: fixed;
+    top: 68px;
+    height: 100vh;
+    right: -300px;
+    width: 218px;
+    background: $darkGreen;
+    border-radius: 15px 0 0 15px;
+    padding-top: 24px;
+    padding-left: 36px;
+    transition: right 0.3s ease-in-out;
+  }
+}
+
+.open {
+  right: -16px;
+}
+
+.close {
+  display: none;
+}
+
+
+.desktopMenu {
+  display: none;
+  @media(min-width: 1920px) {
+    display: block;
+  }
+}
