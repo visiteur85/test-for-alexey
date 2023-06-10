@@ -1,0 +1,194 @@
+@import "src/styles/variables";
+
+.aboutMe {
+  background: $backgroundGreen;
+  padding: 40px 16px 24px 16px;
+  @media(min-width: 920px) {
+    padding: 80px 16% 56px 19%;
+  }
+
+  .infoPhotoWrapp {
+    margin-bottom: 56px;
+    @media(min-width: 920px) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .info {
+      position: relative;
+
+      .titleAboutWrap {
+        margin-bottom: 24px;
+      }
+
+      .presentation {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #262626;
+        margin-bottom: 24px;
+        @media(min-width: 920px) {
+          font-size: 20px;
+          line-height: 28px;
+        }
+
+        .name {
+          font-weight: 600;
+          color: $darkGreen;
+        }
+      }
+
+      .description {
+        padding-left: 59px;
+        margin-bottom: 24px;
+        @media(min-width: 920px) {
+          padding-left: 121px;
+          margin-bottom: 0;
+        }
+
+        li {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: #262626;
+          @media(min-width: 920px) {
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+
+        li:not(:last-child) {
+          margin-bottom: 16px;
+          @media(min-width: 920px) {
+            margin-bottom: 24px;
+          }
+        }
+
+      }
+
+      .circles {
+        position: absolute;
+        top: 123px;
+        left: -16px;
+        @media(min-width: 920px) {
+          display: none
+        }
+      }
+
+      .bigCircles {
+        display: none;
+        @media(min-width: 920px) {
+          display: block;
+          position: absolute;
+          top: 135px;
+          left: -60px;
+        }
+      }
+
+
+    }
+
+    .photo {
+      padding-left: 59px;
+      @media(min-width: 920px) {
+        display: none;
+
+      }
+    }
+
+    .photoBig {
+      display: none;
+      @media(min-width: 920px) {
+        display: block;
+        margin-left: 70px;
+
+      }
+    }
+
+  }
+
+  .titleSpecialWrap {
+    margin-bottom: 32px;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-between;
+
+
+    .icon {
+      width: 109px;
+      height: 109px;
+      border-radius: 12px;
+      background-color: white;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 17px;
+      position: relative;
+      @media(min-width: 920px) {
+        width: 407px;
+        height: 298px;
+        border-radius: 15px;
+        font-size: 18px;
+        line-height: 25px;
+
+      }
+
+
+      .textCode {
+        position: absolute;
+        top: 75px;
+        right: 36px;
+        @media(min-width: 920px) {
+          top: 197px;
+          right: 175px;
+
+        }
+      }
+
+      .textCodeJs {
+        right: 26px;
+        @media(min-width: 920px) {
+          right: 160px;
+
+        }
+      }
+    }
+
+    .python {
+      padding: 17px 0 0 32px;
+      @media(min-width: 920px) {
+        padding: 76px 0 0 163px;
+
+      }
+
+    }
+
+    .go {
+      padding: 30px 0 0 18px;
+      @media(min-width: 920px) {
+        padding: 92px 0 0 128px;
+
+      }
+    }
+  }
+
+}
+
+.allSvgComponent {
+  display: block;
+  @media(min-width: 920px) {
+    display: none;
+
+  }
+}
+
+.allSvgComponentBig {
+  display: none;
+  @media(min-width: 920px) {
+    display: block;
+    border: 1px solid red;
+
+  }
+}
+

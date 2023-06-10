@@ -3,8 +3,8 @@
 .header {
   padding: 21px 16px 0 16px;
   margin-bottom: 45px;
-  @media(min-width: 1920px) {
-    padding: 58px 319px 0 320px;
+  @media(min-width: 920px) {
+    padding: 58px 16% 0 16%;
     margin-bottom: 101.63px;
   }
 
@@ -12,20 +12,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media(min-width: 1920px) {
-      justify-content: initial;
-
-    }
+    //@media(min-width: 920px) {
+    //
+    //
+    //}
   }
 }
 
 .logo {
   width: 150px;
   height: 36px;
-  @media(min-width: 1920px) {
+  @media(min-width: 920px) {
     width: 204px;
     height: 55.77px;
-    margin-right: 342px;
+    //margin-right: 25%;
   }
 }
 
@@ -41,7 +41,7 @@
   }
 }
 .navMenu {
-  @media(min-width: 1920px) {
+  @media(min-width: 920px) {
  display: none;
   }
 }
@@ -74,7 +74,7 @@
 
 .desktopMenu {
   display: none;
-  @media(min-width: 1920px) {
+  @media(min-width: 920px) {
     display: block;
   }
 }

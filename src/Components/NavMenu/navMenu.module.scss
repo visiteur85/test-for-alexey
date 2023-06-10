@@ -3,29 +3,38 @@
 .list {
   display: flex;
   flex-direction: column;
-  @media(min-width: 1920px) {
+  @media(min-width: 920px) {
     flex-direction: row;
+
   }
 
-  &__item:not(:last-child) {
-    margin-bottom: 32px;
+  &__item {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    @media(min-width: 1920px) {
-      margin-right: 32px;
+    &:not(:last-child){
+      margin-bottom: 32px;
+    }
+    @media(min-width: 920px) {
       margin-bottom: 0;
+      white-space: nowrap;
+      &:not(:last-child){
+        margin-bottom: 0px;
+        margin-right: 32px;
+      }
+
     }
 
     a {
-      @media(min-width: 1920px) {
+      color: white;
+      @media(min-width: 920px) {
         color: #262626;
       }
     }
 
     a:active {
       color: $green;
-      @media(min-width: 1920px) {
+      @media(min-width: 920px) {
         text-decoration: underline;
 
       }

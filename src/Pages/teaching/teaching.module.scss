@@ -1,0 +1,8 @@
+@import "src/styles/variables";
+
+.teaching {
+
+  padding: 40px 16px 51px 16px;
+  @media(min-width: 920px) {
+    padding: 64px 16% 64px 19%;
+  }}
