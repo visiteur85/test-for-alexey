@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import style from './reviews.module.scss';
+import style from './reviewsDesktop.module.scss';
 import photo from '../../assets/pictures/Photos/rewievs/Роман.png'
 
 const sliderData = [
@@ -61,7 +61,7 @@ const sliderData = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur cum deleniti dignissimos et ex expedita itaque, molestiae nobis perspiciatis possimus quo soluta tempore, ullam!'
     },
 ]
-export const Reviews = () => {
+export const ReviewsDesktop = () => {
     const [currentSlider, setCurrentSlider] = useState([])
     const limit = 5
     const [offset, setOffset] = useState(0)

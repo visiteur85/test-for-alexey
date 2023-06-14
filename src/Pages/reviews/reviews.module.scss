@@ -1,83 +1,10 @@
-.reviewsWrap{
-  display: flex;
-  flex-direction: column;
+@import "src/styles/variables";
 
+.reviews {
+  //background: $backgroundGreen;
+  background-image: linear-gradient(to bottom, white, #F5F7F6);
+  padding: 40px 0px 24px 16px;
   @media(min-width: 920px) {
-    padding-left: 320px;
-  }
-
-  .sliderWrap{
-    display: flex;
-    flex-direction: column;
-    .rowOnde, .rowTwo{
-      display: flex;
-      position: relative;
-      height: 350px;
-
-      .cardWrap{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        width: 297px;
-        background: #ccc;
-        border-radius: 8px;
-        .photoWrap{
-          position: relative;
-          img{
-            object-fit: cover;
-            max-width: 100%;
-          }
-          .name{
-            position: absolute;
-            bottom: 10px;
-            left: calc(50% - 75px);
-            color: #FDFDFD;
-            padding: 6px;
-            border-radius: 5px;
-            white-space: nowrap;
-            background: 0px, 4px
-            rgba(0, 0, 0, 0.25);
-          }
-        }
-        .description{
-          padding: 10px 10px 0;
-        }
-        &.index01{
-
-        }
-        &.index11{
-          right: 0;
-        }
-        &.index02{
-          left: 100px;
-        }
-        &.index12{
-          left: 600px;
-        }
-        &.index22{
-          right: 300px;
-        }
-      }
-    }
-    .rowTwo{
-      justify-content: space-between;
-      align-items: center;
-      .arrow{
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        border: 1px solid black;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 25px;
-        cursor: pointer;
-
-        &.disable{
-          color: red;
-          pointer-events: none;
-        }
-      }
-    }
+    padding: 80px 16% 56px 19%;
   }
 }

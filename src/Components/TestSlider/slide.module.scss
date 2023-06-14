@@ -1,0 +1,73 @@
+@import "src/styles/variables";
+
+.slide {
+  margin-right: 9px;
+  background: white;
+  border-radius: 0 0 15px 15px;
+
+
+
+
+  .picture {
+    margin-bottom: 8px;
+    position: relative;
+  .closeButton {
+    position: absolute;
+    top:21px;
+  }
+
+
+
+    .close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+
+
+    }
+  }
+
+  .review {
+    padding: 0 20px 18px 21px;
+    overflow: hidden;
+
+    .text {
+      margin-bottom: 8px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 17px;
+      margin-bottom: 12px;
+
+
+    }
+    .shownText {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      margin-bottom: 12px;
+    }
+
+    .click {
+      display: flex;
+      justify-content: flex-end;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 17px;
+      color: $darkGreen;
+      span {
+        border-bottom: 1px solid $darkGreen;
+      }
+    }
+  }
+}
+
+img  {
+  width: 100%;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+}

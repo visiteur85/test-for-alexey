@@ -7,11 +7,10 @@ import circles from '../../assets/pictures/svg/circles/Круги-пункты.p
 import bigCircles from '../../assets/pictures/svg/circles/Круги-пункты большие.png'
 import {ReactComponent as Python} from "../../assets/pictures/svg/Lanquages/PythonSmall.svg";
 import {ReactComponent as Js} from "../../assets/pictures/svg/Lanquages/JS logo Small.svg";
+import {ReactComponent as JsBig} from "../../assets/pictures/svg/Lanquages/JS logo.svg";
 import {ReactComponent as Go} from "../../assets/pictures/svg/Lanquages/Go Small.svg";
 import {ReactComponent as PythonBig} from "../../assets/pictures/svg/Lanquages/Python.svg";
-import {ReactComponent as JsBig} from "../../assets/pictures/svg/Lanquages/JS logo.svg";
 import {ReactComponent as GoBig} from "../../assets/pictures/svg/Lanquages/Golang logo.svg";
-
 
 
 export const AboutMe = () => {
@@ -46,6 +45,7 @@ export const AboutMe = () => {
 
                 </div>
                 <div className={style.photo}>
+
                     <img src={photoAboutMe} alt=""/>
                 </div>
                 <div className={style.photoBig}>
@@ -56,26 +56,23 @@ export const AboutMe = () => {
             <div className={style.titleSpecialWrap}>
                 <Title title='Основная специализация'/>
             </div>
-
             <div className={style.icons}>
-            <div className={`${style.icon} ${style.python}`}>
-                <Python className={style.allSvgComponent}/>
-                <PythonBig className={style.allSvgComponentBig}/>
-                <p className={style.textCode}>Python</p>
-            </div>
-            <div className={`${style.icon} ${style.python} `}>
-                <Js className={style.allSvgComponent}/>
-                <JsBig className={style.allSvgComponentBig}/>
-                <p className={`${style.textCode} ${style.textCodeJs}`}>JavaScript</p>
-            </div>
-            <div className={`${style.icon} ${style.go}`}>
-                <Go className={style.allSvgComponent}/>
-                <GoBig className={style.allSvgComponentBig}/>
+                <div className={style.icon}>
+                    <Python className={style.allSvgComponent}/>
+                    <PythonBig className={style.allSvgComponentBig}/>
+                    <p>Python</p>
+                </div>
+                <div className={style.icon}>
+                    <Js className={style.allSvgComponent}/>
+                    <JsBig className={style.allSvgComponentBig}/>
+                    <p>JavaScript</p>
+                </div>
+                <div className={`${style.icon} ${style.go}`}>
+                    <Go className={`${style.allSvgComponent} ${style.goComponent}`}/>
+                    <GoBig className={`${style.allSvgComponentBig} ${style.goComponent} `}/>
+                    <p>Golang</p>
 
-                <p className={style.textCode}>Golang</p>
-
-            </div>
-
+                </div>
 
 
             </div>

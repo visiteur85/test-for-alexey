@@ -3,6 +3,171 @@
 .teaching {
 
   padding: 40px 16px 51px 16px;
+  position: relative;
   @media(min-width: 920px) {
     padding: 64px 16% 64px 19%;
-  }}
+  }
+
+  .title {
+    margin-bottom: 40px;
+    @media(min-width: 920px) {
+      margin-bottom: 93px;
+    }
+  }
+
+
+  .teachingWrapper {
+    position: relative;
+    z-index: 5;
+    @media(min-width: 920px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+
+    }
+
+    .signature {
+      display: none;
+      @media(min-width: 920px) {
+        display: block;
+        position: absolute;
+        top: 39%;
+        left: 41%
+
+      }
+
+
+    }
+
+    .lion {
+      position: absolute;
+      top: 200px;
+      left: -20px;
+      z-index: 0;
+      @media(min-width: 920px) {
+        display: none;
+
+      }
+    }
+
+    .bigLion {
+      display: none;
+      @media(min-width: 920px) {
+        display: block;
+        position: absolute;
+        z-index: 0;
+        right: 1210px;
+        top: -50px;
+
+      }
+    }
+
+    .teachingPhoto {
+      float: left;
+      margin-right: 10px;
+      position: relative;
+      z-index: 5;
+      @media(min-width: 920px) {
+        display: none;
+
+
+      }
+    }
+
+    .teachingBigPhoto {
+      display: none;
+      @media(min-width: 920px) {
+        display: block;
+        order: 1;
+        z-index: 2;
+
+
+      }
+    }
+
+    .aboutStudy {
+      @media(min-width: 920px) {
+
+        order: 2;
+
+
+      }
+    }
+
+
+    .aboutStudents {
+      float: right;
+      margin-left: 10px;
+      @media(min-width: 920px) {
+        display: none;
+      }
+    }
+
+    .aboutStudentsBig {
+      display: none;
+      @media(min-width: 920px) {
+        display: block;
+        order: 4;
+        margin-bottom: 0;
+
+
+      }
+    }
+
+    .aboutStudyPartTwo {
+      @media(min-width: 920px) {
+        align-self: center;
+        order: 3;
+
+
+      }
+    }
+  }
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #262626;
+  line-height: 20px;
+  position: relative;
+  z-index: 5;
+  margin-bottom: 12px;
+  @media(min-width: 920px) {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 24px;
+
+  }
+
+}
+
+
+.aboutStudyPartTwo p.text:last-of-type {
+  margin-bottom: 0;
+}
+
+.aboutStudy p.text:last-of-type {
+  @media(min-width: 920px) {
+    margin-bottom: 0;
+
+  }
+  margin-bottom: 0;
+}
+
+
+.teachingWrapper > * {
+  @media(min-width: 1280px) {
+    flex-basis: 100%;
+
+  }
+  @media(min-width: 1441px) {
+    flex-basis: 48%;
+    margin-bottom: 51px;
+  }
+}
+
+
+
+

@@ -125,6 +125,30 @@
       font-size: 12px;
       line-height: 17px;
       position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .allSvgComponent {
+        display: block;
+        padding-bottom: 5px;
+        @media(min-width: 920px) {
+          width: 0;
+          height: 0;
+
+        }
+      }
+
+      .allSvgComponentBig {
+        display: none;
+
+        @media(min-width: 920px) {
+          display: block;
+          padding-bottom: 20px;
+        }
+      }
+
       @media(min-width: 920px) {
         width: 407px;
         height: 298px;
@@ -133,62 +157,21 @@
         line-height: 25px;
 
       }
-
-
-      .textCode {
-        position: absolute;
-        top: 75px;
-        right: 36px;
-        @media(min-width: 920px) {
-          top: 197px;
-          right: 175px;
-
-        }
-      }
-
-      .textCodeJs {
-        right: 26px;
-        @media(min-width: 920px) {
-          right: 160px;
-
-        }
-      }
-    }
-
-    .python {
-      padding: 17px 0 0 32px;
-      @media(min-width: 920px) {
-        padding: 76px 0 0 163px;
-
-      }
-
     }
 
     .go {
-      padding: 30px 0 0 18px;
-      @media(min-width: 920px) {
-        padding: 92px 0 0 128px;
+      padding: 10px 0 0 0;
+      .goComponent {
+        margin-bottom: 10px;
+        @media(min-width: 920px) {
+          margin-bottom: 15px;
 
+        }
       }
     }
   }
 
 }
 
-.allSvgComponent {
-  display: block;
-  @media(min-width: 920px) {
-    display: none;
 
-  }
-}
-
-.allSvgComponentBig {
-  display: none;
-  @media(min-width: 920px) {
-    display: block;
-    border: 1px solid red;
-
-  }
-}
 
