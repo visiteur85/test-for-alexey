@@ -8,6 +8,8 @@
     flex-direction: row-reverse;
     align-self: start;
     justify-content: flex-end;
+    position: relative;
+    z-index: 0;
   }
 
   &__mobile {
@@ -78,7 +80,8 @@
 }
 
 .mainPhoto {
-  position: relative;
+padding-right: 62px;
+  //position: relative;
   z-index: 0;
   @media(min-width: 920px) {
     display: none;
@@ -87,12 +90,13 @@
 
 .circle {
   position: absolute;
-  top: 202px;
-  left: 240px;
-  @media(min-width: 920px) {
-    top: 350px;
-    left: 420px;
-  }
+  bottom: 0;
+  right: 0;
+  transform: translateX(47%);
+  z-index: 12;
+  //@media(min-width: 920px) {
+  //
+  //}
 
 }
 
@@ -105,3 +109,6 @@
   }
 }
 
+.asd {;
+  position: relative;
+}

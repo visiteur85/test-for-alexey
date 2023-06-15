@@ -216,7 +216,7 @@ export const SlideMobile = ({image, text, id, callBack, activeModal}) => {
             <div className={styleSlide.picture}>
                 {(isHidden || !!activeModal) && <div  onClick={closeModal} className={styleSlide.close}><Close/></div>}
                 <div>
-                    <img  src={image}/>
+                    <img  src={image} alt='avatar'/>
                 </div>
             </div>
             <div className={styleSlide.review}>
@@ -224,8 +224,8 @@ export const SlideMobile = ({image, text, id, callBack, activeModal}) => {
                 {activeModal && !isHidden &&  <div className={styleSlide.link}><a href="https://www.linkedin.com/" target="_blank"><Linked/></a></div>}
 
 
-                {!activeModal && !isHidden && <div onClick={onClickHideReview} className={styleSlide.click}>
-                    <span>Читать далее</span>
+                {!activeModal && !isHidden && <div  className={styleSlide.click}>
+                    <span onClick={onClickHideReview}>Читать далее</span>
 
                 </div>}
 

@@ -38,17 +38,26 @@ export const Avatar = () => {
 
             </div>
             <div className={style.mainPhoto}>
+                <div className={style.asd}>
                 <img src={avatar} alt="portrait"/>
-                <div className={style.circle}>
-                    <img src={circleText} alt="circle"/>
+                    <div className={style.circle}>
+                        <img src={circleText} alt="circle"/>
+                    </div>
                 </div>
+
             </div>
+
             <div className={style.mainBigPhoto}>
+                <div className={style.asd}>
                 <img src={bigAvatar} alt="portrait"/>
                 <div className={style.circle}>
                     <img src={bigCircleText} alt="circle"/>
                 </div>
             </div>
+            </div>
+
+
+
         </section>
     );
 };
