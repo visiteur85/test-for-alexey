@@ -129,19 +129,19 @@ import {Modal} from "../../Modal/Modal";
 
 const slides = [
     {
-        id: uuidv4(),
+        id: '1',
         image: image1,
         text: '1Курс по Python/Django под руководством Алексея выдался продуктивным. Прежде всего, благодаря наличию обратной связи и предоставлению исчерпывающей информации по всем вопросам.Отдельная благодарность Алексею за умение грамотно и доступно излагать изучаемый материал. Как в теории, так и на практике. ',
 
     },
     {
-        id: uuidv4(),
+        id: '2',
         image: image2,
         text: '2Курс по Python/Django под руководством Алексея выдался продуктивным. Прежде всего, благодаря наличию обратной связи и предоставлению исчерпывающей информации по всем вопросам.Отдельная благодарность Алексею за умение грамотно и доступно излагать изучаемый материал. Как в теории, так и на практике.',
 
     },
     {
-        id: uuidv4(),
+        id: '3',
         image: image3,
         text: '3Курс по Python/Django под руководством Алексея выдался продуктивным. Прежде всего, благодаря наличию обратной связи и предоставлению исчерпывающей информации по всем вопросам.Отдельная благодарность Алексею за умение грамотно и доступно излагать изучаемый материал. Как в теории, так и на практике.',
 
@@ -156,7 +156,7 @@ export const MySlider = () => {
     };
 
     const changeCurrentSlide = (modalStatus) => {
-        !modalStatus ? setIsModalActive(null) : setIsModalActive(modalStatus)
+        setIsModalActive(modalStatus ? modalStatus : null)
     }
 
 
@@ -184,8 +184,9 @@ export const MySlider = () => {
                         <SlideMobile
                             image={slide.image}
                             text={slide.text}
-                            activeModal={isModalActive}
+                            activeModal={isModalActive?.id === slide.id}
                             callBack={changeCurrentSlide}
+                            id={slide.id}
                         />
                     </div>
                 ))}
@@ -196,10 +197,9 @@ export const MySlider = () => {
 
 export const SlideMobile = ({image, text, id, callBack, activeModal}) => {
 
-    const [isHidden, setHidden] = useState(false)
+
 
     const onClickHideReview = () => {
-        setHidden(true)
         callBack({id, image, text})
     }
 
@@ -207,24 +207,21 @@ export const SlideMobile = ({image, text, id, callBack, activeModal}) => {
         callBack(null)
     }
 
-    useEffect(() => {
-        setHidden(false);
-    }, [activeModal]);
 
     return (
         <div className={styleSlide.slide}>
             <div className={styleSlide.picture}>
-                {(isHidden || !!activeModal) && <div  onClick={closeModal} className={styleSlide.close}><Close/></div>}
+                {activeModal && <div  onClick={closeModal} className={styleSlide.close}><Close/></div>}
                 <div>
                     <img  src={image} alt='avatar'/>
                 </div>
             </div>
             <div className={styleSlide.review}>
-                <p className={`${styleSlide.text} ${!isHidden && !activeModal ? styleSlide.shownText : ''}`}>{text}</p>
-                {activeModal && !isHidden &&  <div className={styleSlide.link}><a href="https://www.linkedin.com/" target="_blank"><Linked/></a></div>}
+                <p className={`${styleSlide.text} ${!activeModal ? styleSlide.shownText : ''}`}>{text}</p>
+                {activeModal && <div className={styleSlide.link}><a href="https://www.linkedin.com/" target="_blank"><Linked/></a></div>}
 
 
-                {!activeModal && !isHidden && <div  className={styleSlide.click}>
+                {!activeModal && <div  className={styleSlide.click}>
                     <span onClick={onClickHideReview}>Читать далее</span>
 
                 </div>}
