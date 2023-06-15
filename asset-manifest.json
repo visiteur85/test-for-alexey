@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/test-for-alexey/static/css/main.13203a00.css",
-    "main.js": "/test-for-alexey/static/js/main.083cc493.js",
+    "main.js": "/test-for-alexey/static/js/main.cedeb448.js",
     "static/js/787.769c3724.chunk.js": "/test-for-alexey/static/js/787.769c3724.chunk.js",
     "static/media/BigAvatar.png": "/test-for-alexey/static/media/BigAvatar.82cc59c7689fb6ea0a1a.png",
     "static/media/Big Фото Преподавание.png": "/test-for-alexey/static/media/Big Фото Преподавание.af575dbf243194c91732.png",
@@ -30,11 +30,11 @@
     "static/media/Выйти CTA.svg": "/test-for-alexey/static/media/Выйти CTA.96de5a62a6ca4e6ef338c14a4e69ea6a.svg",
     "static/media/Group 14.svg": "/test-for-alexey/static/media/Group 14.fb4cb9e5486bb484b63bf5f84f03c09a.svg",
     "main.13203a00.css.map": "/test-for-alexey/static/css/main.13203a00.css.map",
-    "main.083cc493.js.map": "/test-for-alexey/static/js/main.083cc493.js.map",
+    "main.cedeb448.js.map": "/test-for-alexey/static/js/main.cedeb448.js.map",
     "787.769c3724.chunk.js.map": "/test-for-alexey/static/js/787.769c3724.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.13203a00.css",
-    "static/js/main.083cc493.js"
+    "static/js/main.cedeb448.js"
   ]
 }
