@@ -3,27 +3,55 @@
 .aboutSchool {
   padding: 24px 16px 24px 16px;
   @media(min-width: 920px) {
-    padding: 80px 0 56px 0;
+    padding: 56px 0 56px 0;
     width: 90%;
     max-width: 1281px;
     margin: auto;
   }
 
-  .title {
-    margin-bottom: 24px;
+  .aboutSchoolWrapper {
+    display: flex;
+    flex-direction: column;
+
   }
 
-  .sliderMobile {
+  .title {
     margin-bottom: 24px;
+    @media(min-width: 920px) {
+      margin-bottom: 93px;
+    }
+  }
+
+  .slider {
+    margin-bottom: 24px;
+    @media(min-width: 920px) {
+      order: 2;
+    }
+
   }
 
   .text {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+    @media(min-width: 920px) {
+      order: 1;
+      font-size: 16px;
+      line-height: 22px;
+      max-width: 600px;
+      &:nth-child(3) {
+        max-width: 685px;
+
+      }
+    }
+
     span {
       font-weight: 600;
+      @media(min-width: 920px) {
+        font-weight: 400;
+      }
     }
+
     &:first-of-type {
       margin-bottom: 16px;
     }
@@ -34,18 +62,30 @@
 
 
 .sliderWrapper {
+  @media(min-width: 920px) {
+    display: flex;
+    flex-direction: column;
+
+  }
+
   .slider {
     display: flex;
     margin-bottom: 20px;
+    @media(min-width: 920px) {
 
-    & > img:first-child {
-      margin-right: 5px;
+
+
     }
+
   }
 
   .buttons {
     display: flex;
     justify-content: flex-end;
+    @media(min-width: 920px) {
+      margin-bottom: 32px;
+
+    }
 
     > div:first-child {
       margin-right: 40px;
@@ -58,6 +98,11 @@
       border-radius: 50%;
       background: url("../../assets/pictures/svg/arrows/Vector 3.svg") no-repeat center;
       cursor: pointer;
+      @media(min-width: 920px) {
+        width: 60px;
+        height: 60px;
+
+      }
 
     }
 
@@ -69,6 +114,11 @@
       background: url("../../assets/pictures/svg/arrows/Vector 3.svg") no-repeat center;
       rotate: 180deg;
       cursor: pointer;
+      @media(min-width: 920px) {
+        width: 60px;
+        height: 60px;
+
+      }
 
     }
 

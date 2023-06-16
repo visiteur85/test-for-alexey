@@ -12,13 +12,17 @@ export const AboutSchool = () => {
             <div className={style.title}>
                 <Title title='О школе ITEC'/>
             </div>
-            <div className={style.sliderMobile}>
-                <Slider/>
+            <div className={style.aboutSchoolWrapper}>
+                <div className={style.slider}>
+                    <Slider/>
+                </div>
+                <p className={style.text}>Школа ITEC — мое главное детище, в которое я вкладываюсь уже <span> несколько лет.</span> Помимо
+                    меня
+                    в ней преподают мои бывшие ученики, которых
+                    я специально для этого подготовил.</p>
+                <p className={style.text}>В первую очередь мои ученики — это продолжение меня и моего <span>стиля в разработке.</span>
+                </p>
             </div>
-            <p className={style.text}>Школа ITEC — мое главное детище, в которое я вкладываюсь уже <span> несколько лет.</span> Помимо меня
-                в ней преподают мои бывшие ученики, которых
-                я специально для этого подготовил.</p>
-            <p className={style.text}>В первую очередь мои ученики — это продолжение меня и моего <span>стиля в разработке.</span></p>
         </section>
     );
 };
@@ -26,10 +30,10 @@ export const AboutSchool = () => {
 
 const Slider = () => {
     const images = [
-        {id:1,photo: daria},
-        {id:2,photo: roman},
-        {id:3,photo: anastasia},
-        {id:4,photo: serguey}
+        {id: 1, photo: daria},
+        {id: 2, photo: roman},
+        {id: 3, photo: anastasia},
+        {id: 4, photo: serguey}
     ];
 
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -45,12 +49,14 @@ const Slider = () => {
     return (
         <div className={style.sliderWrapper}>
             <div className={style.slider}>
-                <img  src={images[(currentSlide - 1 + images.length) % images.length].photo}
+                <img src={images[(currentSlide - 1 + images.length) % images.length].photo}
                      alt="Slide"/>
+                <img className="slide" src={images[currentSlide].photo} alt="Slide" />
+                <img className="slide" src={images[(currentSlide + 1) % images.length].photo} alt="Slide" />
             </div>
             <div className={style.buttons}>
-            <div className={style.arrowLeft} onClick={prevSlide}></div>
-            <div className={style.arrowRight} onClick={nextSlide}></div>
+                <div className={style.arrowLeft} onClick={prevSlide}></div>
+                <div className={style.arrowRight} onClick={nextSlide}></div>
             </div>
 
 
