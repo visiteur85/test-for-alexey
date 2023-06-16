@@ -1,12 +1,17 @@
 {
   "files": {
-    "main.css": "/test-for-alexey/static/css/main.4479424f.css",
-    "main.js": "/test-for-alexey/static/js/main.cedeb448.js",
+    "main.css": "/test-for-alexey/static/css/main.1069c4ef.css",
+    "main.js": "/test-for-alexey/static/js/main.d046e96b.js",
     "static/js/787.769c3724.chunk.js": "/test-for-alexey/static/js/787.769c3724.chunk.js",
     "static/media/BigAvatar.png": "/test-for-alexey/static/media/BigAvatar.82cc59c7689fb6ea0a1a.png",
     "static/media/Big Фото Преподавание.png": "/test-for-alexey/static/media/Big Фото Преподавание.af575dbf243194c91732.png",
     "static/media/20220614_155534_075 1.png": "/test-for-alexey/static/media/20220614_155534_075 1.dae0cc9aab9e16e42c34.png",
+    "static/media/image 5.png": "/test-for-alexey/static/media/image 5.dd2cdc7d81b47c957d21.png",
+    "static/media/Дарья Стасевич.png": "/test-for-alexey/static/media/Дарья Стасевич.6dcbfc5e0b556cd5d291.png",
+    "static/media/Сергей Барауля.png": "/test-for-alexey/static/media/Сергей Барауля.719ee010603c8dd68813.png",
+    "static/media/Сергей Барауля1.png": "/test-for-alexey/static/media/Сергей Барауля1.699d601001146af4625d.png",
     "static/media/Анастасия Литвин.png": "/test-for-alexey/static/media/Анастасия Литвин.9e2845dc85046e6fe947.png",
+    "static/media/Роман.png": "/test-for-alexey/static/media/Роман.023d78c7ac759d4e568e.png",
     "static/media/avatar.png": "/test-for-alexey/static/media/avatar.ea89dd3d9b33cb35dfac.png",
     "static/media/Фото обо Мне.png": "/test-for-alexey/static/media/Фото обо Мне.edebae0841aecc0b609b.png",
     "static/media/20220614_160615 2.png": "/test-for-alexey/static/media/20220614_160615 2.81a0d74d52c0771ad44d.png",
@@ -17,24 +22,28 @@
     "static/media/Круговая надпись.svg": "/test-for-alexey/static/media/Круговая надпись.be72bcb56c25c34def9f99ef4e9125ea.svg",
     "static/media/Лого главная.svg": "/test-for-alexey/static/media/Лого главная.025d3c932999d31f719bc1476f1e786a.svg",
     "static/media/bigLion.svg": "/test-for-alexey/static/media/bigLion.621b4a8b134c2655961df7a19a7e1ef8.svg",
+    "static/media/Vector.svg": "/test-for-alexey/static/media/Vector.a0d05b05b0b6a986a09631d294df5d41.svg",
     "static/media/lionSmall.svg": "/test-for-alexey/static/media/lionSmall.8d1d5502e111f0d3d685fda37121298d.svg",
     "static/media/Big Telegram Messenger.svg": "/test-for-alexey/static/media/Big Telegram Messenger.b7ac22f9fa037aa1bb3e3bb482cb65fb.svg",
     "static/media/Go Small.svg": "/test-for-alexey/static/media/Go Small.36b8710f6045fedfeb5c08363be17790.svg",
     "static/media/Golang logo.svg": "/test-for-alexey/static/media/Golang logo.3f38aaaded6af09302748902fccd5a4b.svg",
     "static/media/Python.svg": "/test-for-alexey/static/media/Python.ded2beb51547941eb80dee0abc125c68.svg",
     "static/media/PythonSmall.svg": "/test-for-alexey/static/media/PythonSmall.c76dba3b489746d690e2f5db81f1c504.svg",
+    "static/media/Обводка с пунктами.svg": "/test-for-alexey/static/media/Обводка с пунктами.de586a09727f35820c05092d1dde8a7a.svg",
     "index.html": "/test-for-alexey/index.html",
-    "static/media/Vector.svg": "/test-for-alexey/static/media/Vector.a0d05b05b0b6a986a09631d294df5d41.svg",
     "static/media/Linked in logo.svg": "/test-for-alexey/static/media/Linked in logo.7a4075f6df28b2ee052ca4fde974ee91.svg",
+    "static/media/Linked in logo@2x.svg": "/test-for-alexey/static/media/Linked in logo@2x.7a4075f6df28b2ee052ca4fde974ee91.svg",
     "static/media/Mail Messenger.svg": "/test-for-alexey/static/media/Mail Messenger.cad7f9d73ee1750cd26c497003b9c1f8.svg",
     "static/media/Выйти CTA.svg": "/test-for-alexey/static/media/Выйти CTA.96de5a62a6ca4e6ef338c14a4e69ea6a.svg",
     "static/media/Group 14.svg": "/test-for-alexey/static/media/Group 14.fb4cb9e5486bb484b63bf5f84f03c09a.svg",
-    "main.4479424f.css.map": "/test-for-alexey/static/css/main.4479424f.css.map",
-    "main.cedeb448.js.map": "/test-for-alexey/static/js/main.cedeb448.js.map",
+    "static/media/Vector 3.svg": "/test-for-alexey/static/media/Vector 3.67c4ce26153f8c6e96b1.svg",
+    "static/media/Vector 3 white.svg": "/test-for-alexey/static/media/Vector 3 white.b522c7bd2e2405dfcb76.svg",
+    "main.1069c4ef.css.map": "/test-for-alexey/static/css/main.1069c4ef.css.map",
+    "main.d046e96b.js.map": "/test-for-alexey/static/js/main.d046e96b.js.map",
     "787.769c3724.chunk.js.map": "/test-for-alexey/static/js/787.769c3724.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4479424f.css",
-    "static/js/main.cedeb448.js"
+    "static/css/main.1069c4ef.css",
+    "static/js/main.d046e96b.js"
   ]
 }
