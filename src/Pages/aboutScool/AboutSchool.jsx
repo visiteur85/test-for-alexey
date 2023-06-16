@@ -47,7 +47,6 @@ const Slider = () => {
             <div className={style.slider}>
                 <img  src={images[(currentSlide - 1 + images.length) % images.length].photo}
                      alt="Slide"/>
-                <img  src={images[(currentSlide + 1) % images.length].photo} alt="Slide"/>
             </div>
             <div className={style.buttons}>
             <div className={style.arrowLeft} onClick={prevSlide}></div>
