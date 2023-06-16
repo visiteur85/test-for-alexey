@@ -6,19 +6,23 @@ import {AboutMe} from "./Pages/aboutMe/AboutMe";
 import {Teaching} from "./Pages/teaching/Teaching";
 import Reviews from "./Pages/reviews/Reviews";
 import React from "react";
+import {AboutSchool} from "./Pages/aboutScool/AboutSchool";
 
 function App() {
     return (
         <div className="App">
             <Header/>
             <Avatar/>
-            <div className='AboutMe'>
-            <AboutMe/>
+            <div className='background'>
+                <AboutMe/>
             </div>
             <Teaching/>
-            <div className='Reviews'>
-            <Reviews/>
+            <div className='background'>
+                <AboutSchool/>
             </div>
+            <Reviews/>
+
+
             {/*не забыть удалить блок ниже, он просто для теста пока*/}
             <Teaching/>
             {/*<svg width="111" height="111" viewBox="0 0 111 111" fill="none" xmlns="http://www.w3.org/2000/svg">*/}

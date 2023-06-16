@@ -1,0 +1,96 @@
+@import "src/styles/variables";
+
+.aboutSchool {
+  padding: 24px 16px 24px 16px;
+  @media(min-width: 920px) {
+    padding: 80px 0 56px 0;
+    width: 90%;
+    max-width: 1281px;
+    margin: auto;
+  }
+
+  .title {
+    margin-bottom: 24px;
+  }
+
+  .sliderMobile {
+    margin-bottom: 24px;
+  }
+
+  .text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    span {
+      font-weight: 600;
+    }
+    &:first-of-type {
+      margin-bottom: 16px;
+    }
+
+
+  }
+}
+
+
+.sliderWrapper {
+  .slider {
+    display: flex;
+    margin-bottom: 20px;
+
+    & > img:first-child {
+      margin-right: 5px;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+
+    > div:first-child {
+      margin-right: 40px;
+    }
+
+    .arrowLeft {
+      width: 35px;
+      height: 35px;
+      border: 1px solid $darkGreen;
+      border-radius: 50%;
+      background: url("../../assets/pictures/svg/arrows/Vector 3.svg") no-repeat center;
+      cursor: pointer;
+
+    }
+
+    .arrowRight {
+      width: 35px;
+      height: 35px;
+      border: 1px solid $darkGreen;
+      border-radius: 50%;
+      background: url("../../assets/pictures/svg/arrows/Vector 3.svg") no-repeat center;
+      rotate: 180deg;
+      cursor: pointer;
+
+    }
+
+    .arrowLeft:active {
+      rotate: 180deg;
+      background: url("../../assets/pictures/svg/arrows/Vector 3 white.svg") no-repeat center $darkGreen;
+
+    }
+
+    .arrowRight:active {
+      background: url("../../assets/pictures/svg/arrows/Vector 3 white.svg") no-repeat center $darkGreen;
+      rotate: 0deg;
+
+    }
+
+  }
+
+}
+
+img {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
