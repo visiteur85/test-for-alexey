@@ -1,12 +1,9 @@
-@import "src/styles/variables";
+@import "../../../../styles/variables";
 
 .slide {
   margin-right: 9px;
   background: white;
   border-radius: 0 0 15px 15px;
-
-
-
 
   .picture {
     margin-bottom: 8px;
@@ -15,9 +12,6 @@
     position: absolute;
     top:21px;
   }
-
-
-
     .close {
       position: absolute;
       top: 16px;

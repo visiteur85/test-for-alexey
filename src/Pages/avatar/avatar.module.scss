@@ -3,13 +3,16 @@
 .avatar {
   padding: 0 16px 35px 16px;
   @media(min-width: 920px) {
-    padding: 0 16% 0 16%;
     display: flex;
     flex-direction: row-reverse;
     align-self: start;
     justify-content: flex-end;
     position: relative;
     z-index: 0;
+    padding: 56px 0 56px 0;
+    width: 90%;
+    max-width: 1281px;
+    margin: auto;
   }
 
   &__mobile {

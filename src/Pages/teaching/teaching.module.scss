@@ -5,7 +5,10 @@
   padding: 40px 16px 51px 16px;
   position: relative;
   @media(min-width: 920px) {
-    padding: 64px 16% 64px 19%;
+    padding: 64px 0 64px 0;
+    width: 90%;
+    max-width: 1281px;
+    margin: auto;
   }
 
   .title {

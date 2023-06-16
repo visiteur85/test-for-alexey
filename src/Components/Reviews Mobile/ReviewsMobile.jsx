@@ -1,7 +1,7 @@
 import React from 'react';
 import {Title} from "../Title/Title";
 import style from './reviewsMobile.module.scss'
-import {MySlider} from "../TestSlider/Slider";
+import {MySlider} from "./SliderMobile/Slider";
 import {Element} from "react-scroll";
 
 

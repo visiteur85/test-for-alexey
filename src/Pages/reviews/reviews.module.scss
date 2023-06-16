@@ -1,10 +1,29 @@
 @import "src/styles/variables";
 
 .reviews {
-  //background: $backgroundGreen;
-  background-image: linear-gradient(to bottom, white, #F5F7F6);
+
+
   padding: 40px 0px 24px 16px;
   @media(min-width: 920px) {
-    padding: 80px 16% 56px 19%;
+    //padding: 80px 29% 56px 19%;
+    padding: 80px 0 56px 0;
+    width: 90%;
+    max-width: 1281px;
+    margin: auto;
   }
+
+  .reviewsMobile {
+    display: block;
+    @media(min-width: 1440px) {
+      display: none;
+    }
+  }
+
+  .reviewsDesktop {
+    display: none;
+    @media(min-width: 1440px) {
+      display: block;
+    }
+  }
+
 }
