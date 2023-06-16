@@ -1,0 +1,99 @@
+@import "src/styles/variables";
+
+.sliderWrapper {
+  @media(min-width: 920px) {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .sliderMobile {
+    display: flex;
+    margin-bottom: 20px;
+
+    img {
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+
+    }
+
+    @media(min-width: 920px) {
+      display: none;
+
+    }
+
+  }
+
+  .sliderDesktop {
+    display: none;
+    @media(min-width: 920px) {
+      display: flex;
+      order: 2;
+      img {
+        margin-right: 20px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    @media(min-width: 920px) {
+      margin-bottom: 32px;
+      order: 1;
+
+    }
+
+    > div:first-child {
+      margin-right: 30px;
+    }
+
+    .arrowLeft {
+      width: 35px;
+      height: 35px;
+      border: 1px solid $darkGreen;
+      border-radius: 50%;
+      background: url("../../assets/pictures/svg/arrows/Vector 3.svg") no-repeat center;
+      cursor: pointer;
+      @media(min-width: 920px) {
+        width: 60px;
+        height: 60px;
+
+      }
+
+    }
+
+    .arrowRight {
+      width: 35px;
+      height: 35px;
+      border: 1px solid $darkGreen;
+      border-radius: 50%;
+      background: url("../../assets/pictures/svg/arrows/Vector 3.svg") no-repeat center;
+      rotate: 180deg;
+      cursor: pointer;
+      @media(min-width: 920px) {
+        width: 60px;
+        height: 60px;
+
+      }
+
+    }
+
+    .arrowLeft:active {
+      rotate: 180deg;
+      background: url("../../assets/pictures/svg/arrows/Vector 3 white.svg") no-repeat center $darkGreen;
+
+    }
+
+    .arrowRight:active {
+      background: url("../../assets/pictures/svg/arrows/Vector 3 white.svg") no-repeat center $darkGreen;
+      rotate: 0deg;
+
+    }
+
+  }
+
+}

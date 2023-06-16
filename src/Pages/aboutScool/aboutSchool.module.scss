@@ -61,87 +61,12 @@
 }
 
 
-.sliderWrapper {
-  @media(min-width: 920px) {
-    display: flex;
-    flex-direction: column;
-
-  }
-
-  .slider {
-    display: flex;
-    margin-bottom: 20px;
-    @media(min-width: 920px) {
 
 
-
-    }
-
-  }
-
-  .buttons {
-    display: flex;
-    justify-content: flex-end;
-    @media(min-width: 920px) {
-      margin-bottom: 32px;
-
-    }
-
-    > div:first-child {
-      margin-right: 40px;
-    }
-
-    .arrowLeft {
-      width: 35px;
-      height: 35px;
-      border: 1px solid $darkGreen;
-      border-radius: 50%;
-      background: url("../../assets/pictures/svg/arrows/Vector 3.svg") no-repeat center;
-      cursor: pointer;
-      @media(min-width: 920px) {
-        width: 60px;
-        height: 60px;
-
-      }
-
-    }
-
-    .arrowRight {
-      width: 35px;
-      height: 35px;
-      border: 1px solid $darkGreen;
-      border-radius: 50%;
-      background: url("../../assets/pictures/svg/arrows/Vector 3.svg") no-repeat center;
-      rotate: 180deg;
-      cursor: pointer;
-      @media(min-width: 920px) {
-        width: 60px;
-        height: 60px;
-
-      }
-
-    }
-
-    .arrowLeft:active {
-      rotate: 180deg;
-      background: url("../../assets/pictures/svg/arrows/Vector 3 white.svg") no-repeat center $darkGreen;
-
-    }
-
-    .arrowRight:active {
-      background: url("../../assets/pictures/svg/arrows/Vector 3 white.svg") no-repeat center $darkGreen;
-      rotate: 0deg;
-
-    }
-
-  }
-
-}
-
-img {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  margin-right: 10px;
-}
+//img {
+//  border-bottom-left-radius: 10px;
+//  border-bottom-right-radius: 10px;
+//
+//}
 
 
