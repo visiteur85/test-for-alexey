@@ -10,6 +10,7 @@ import {AboutSchool} from "./Pages/aboutScool/AboutSchool";
 import {Offer} from "./Pages/offer/Offer";
 import {Form} from "./Pages/offer/components/form/Form";
 import {SuccessForm} from "./Pages/offer/components/successForm/SuccessForm";
+import {Modal} from "./Modal/Modal";
 
 
 function App() {
@@ -31,8 +32,9 @@ function App() {
                 <div className='background'>
                     <Offer/>
                 </div>
-                <Form/>
-                <SuccessForm/>
+                {/*<Modal>{<SuccessForm/>}</Modal>*/}
+                {/*<SuccessForm/>*/}
+
             </main>
         </div>
     );

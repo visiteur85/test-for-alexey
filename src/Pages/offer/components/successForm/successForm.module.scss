@@ -13,6 +13,21 @@
     width: 50%;
     border-radius: 15px;
   }
+  .lion {
+    position: absolute;
+    top: 0;
+    left: -30px;
+
+  }
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    @media(min-width: 920px) {
+      top: 32px;
+      right: 32px;
+    }
+  }
 
   p {
     text-align: center;
@@ -42,20 +57,4 @@
   }
 }
 
-.closeButton {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  @media(min-width: 920px) {
-    top: 32px;
-    right: 32px;
-  }
-}
 
-.lion {
-  position: absolute;
-  top: 0;
-
-
-
-}
