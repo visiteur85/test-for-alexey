@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test-for-alexey/static/css/main.619c217e.css",
-    "main.js": "/test-for-alexey/static/js/main.05d6c7f5.js",
+    "main.css": "/test-for-alexey/static/css/main.c2f847aa.css",
+    "main.js": "/test-for-alexey/static/js/main.43b11cb1.js",
     "static/js/787.769c3724.chunk.js": "/test-for-alexey/static/js/787.769c3724.chunk.js",
     "static/media/BigAvatar.png": "/test-for-alexey/static/media/BigAvatar.82cc59c7689fb6ea0a1a.png",
     "static/media/Big Фото Преподавание.png": "/test-for-alexey/static/media/Big Фото Преподавание.af575dbf243194c91732.png",
@@ -21,6 +21,9 @@
     "static/media/Фото Преподавание.png": "/test-for-alexey/static/media/Фото Преподавание.4f40d1b1758413577a54.png",
     "static/media/Круговая надпись.svg": "/test-for-alexey/static/media/Круговая надпись.be72bcb56c25c34def9f99ef4e9125ea.svg",
     "static/media/Лого главная.svg": "/test-for-alexey/static/media/Лого главная.025d3c932999d31f719bc1476f1e786a.svg",
+    "static/media/Лев лого offer.svg": "/test-for-alexey/static/media/Лев лого offer.7620e935307cfde1c84f9025b50d3146.svg",
+    "static/media/Лев лого offer big.svg": "/test-for-alexey/static/media/Лев лого offer big.cf8d1e74f4ae15961441c8f72b309a5c.svg",
+    "static/media/Лев лого.svg": "/test-for-alexey/static/media/Лев лого.b56e7ac83dade7dfb612e3aba80ea0e0.svg",
     "static/media/bigLion.svg": "/test-for-alexey/static/media/bigLion.621b4a8b134c2655961df7a19a7e1ef8.svg",
     "static/media/Vector.svg": "/test-for-alexey/static/media/Vector.a0d05b05b0b6a986a09631d294df5d41.svg",
     "static/media/lionSmall.svg": "/test-for-alexey/static/media/lionSmall.8d1d5502e111f0d3d685fda37121298d.svg",
@@ -31,6 +34,7 @@
     "static/media/PythonSmall.svg": "/test-for-alexey/static/media/PythonSmall.c76dba3b489746d690e2f5db81f1c504.svg",
     "static/media/Обводка с пунктами.svg": "/test-for-alexey/static/media/Обводка с пунктами.de586a09727f35820c05092d1dde8a7a.svg",
     "index.html": "/test-for-alexey/index.html",
+    "static/media/Ellipse 30.svg": "/test-for-alexey/static/media/Ellipse 30.f3b32030277ee21301e90339d0904a59.svg",
     "static/media/Linked in logo.svg": "/test-for-alexey/static/media/Linked in logo.7a4075f6df28b2ee052ca4fde974ee91.svg",
     "static/media/Linked in logo@2x.svg": "/test-for-alexey/static/media/Linked in logo@2x.7a4075f6df28b2ee052ca4fde974ee91.svg",
     "static/media/Mail Messenger.svg": "/test-for-alexey/static/media/Mail Messenger.cad7f9d73ee1750cd26c497003b9c1f8.svg",
@@ -38,12 +42,12 @@
     "static/media/Group 14.svg": "/test-for-alexey/static/media/Group 14.fb4cb9e5486bb484b63bf5f84f03c09a.svg",
     "static/media/Vector 3.svg": "/test-for-alexey/static/media/Vector 3.67c4ce26153f8c6e96b1.svg",
     "static/media/Vector 3 white.svg": "/test-for-alexey/static/media/Vector 3 white.b522c7bd2e2405dfcb76.svg",
-    "main.619c217e.css.map": "/test-for-alexey/static/css/main.619c217e.css.map",
-    "main.05d6c7f5.js.map": "/test-for-alexey/static/js/main.05d6c7f5.js.map",
+    "main.c2f847aa.css.map": "/test-for-alexey/static/css/main.c2f847aa.css.map",
+    "main.43b11cb1.js.map": "/test-for-alexey/static/js/main.43b11cb1.js.map",
     "787.769c3724.chunk.js.map": "/test-for-alexey/static/js/787.769c3724.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.619c217e.css",
-    "static/js/main.05d6c7f5.js"
+    "static/css/main.c2f847aa.css",
+    "static/js/main.43b11cb1.js"
   ]
 }
