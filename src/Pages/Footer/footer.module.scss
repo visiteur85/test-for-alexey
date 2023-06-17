@@ -1,0 +1,99 @@
+@import "src/styles/variables";
+
+
+@media(min-width: 920px) {
+
+  padding: 80px 0 56px 0;
+  width: 90%;
+  max-width: 1281px;
+  margin: auto;
+}
+
+
+.footer {
+  padding: 41px 0 24px 0;
+  width: 90%;
+  max-width: 375px;
+  margin: auto;
+  display: flex;
+
+
+  @media(min-width: 920px) {
+
+    padding: 80px 0 56px 0;
+    width: 90%;
+    max-width: 1281px;
+    margin: auto;
+  }
+
+  .contacts {
+    flex-basis: 48%;
+  }
+
+  .navMenu {
+    flex-basis: 42%;
+  }
+
+  .links {
+    flex-basis: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      height: 51px;
+      background-color: $white;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 1px;
+      height: 51px;
+      background-color: $white;
+
+    }
+
+    .messenger {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+      align-self: center;
+    }
+
+
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 16px;
+    color: $white;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    color: $white;
+    line-height: 16px;
+    opacity: 60%;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+}
+
+
+
+

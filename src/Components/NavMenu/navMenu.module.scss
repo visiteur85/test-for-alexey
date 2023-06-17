@@ -41,3 +41,21 @@
     }
   }
 }
+.blockFooter {
+
+  &__item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    &:not(:last-child){
+      margin-bottom: 16px;
+    }
+    a:active {
+      color: $green;
+      @media(min-width: 920px) {
+        text-decoration: underline;
+
+      }
+    }
+  }
+}

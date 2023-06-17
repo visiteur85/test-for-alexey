@@ -11,6 +11,7 @@ import {Offer} from "./Pages/offer/Offer";
 import {Form} from "./Pages/offer/components/form/Form";
 import {SuccessForm} from "./Pages/offer/components/successForm/SuccessForm";
 import {Modal} from "./Modal/Modal";
+import {Footer} from "./Pages/Footer/Footer";
 
 
 function App() {
@@ -32,10 +33,10 @@ function App() {
                 <div className='background'>
                     <Offer/>
                 </div>
-                {/*<Modal>{<SuccessForm/>}</Modal>*/}
-                {/*<SuccessForm/>*/}
-
             </main>
+            <footer className='footer'>
+                <Footer/>
+            </footer>
         </div>
     );
 }
