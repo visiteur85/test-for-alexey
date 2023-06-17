@@ -89,6 +89,9 @@ padding-right: 62px;
   @media(min-width: 920px) {
     display: none;
   }
+  .mainPhotoContainer {;
+    position: relative;
+  }
 }
 
 .circle {
@@ -112,6 +115,20 @@ padding-right: 62px;
   }
 }
 
-.asd {;
-  position: relative;
+
+
+.telegram:active {
+  fill: $darkGreen;
+
+  path {
+    stroke: white;
+  }
+}
+
+.mail:active {
+  fill: $darkGreen;
+
+  path {
+    stroke: white;
+  }
 }

@@ -17,7 +17,7 @@ export const Avatar = () => {
                     <h1 className={style.heading__title}>ALEX YUNCHITS </h1>
                     <div>
                         <TelegramIcon className={style.telegram}/>
-                        <MailIcon/>
+                        <MailIcon className={style.mail}/>
                     </div>
                 </div>
                 <p className={style.text}>Привет! Меня зовут Алексей Юнчиц.<br/>
@@ -30,16 +30,16 @@ export const Avatar = () => {
                     <p className={style.text}>Привет! Меня зовут Алексей Юнчиц.
                         Я Full Stack<br/> разработчик и преподаватель.</p>
                     <div>
-                        <BigTelegramIcon  className={style.telegram}/>
-                        <BigMailIcon/>
+                        <BigTelegramIcon className={style.telegram}/>
+                        <BigMailIcon className={style.mail}/>
                     </div>
                 </div>
 
 
             </div>
             <div className={style.mainPhoto}>
-                <div className={style.asd}>
-                <img src={avatar} alt="portrait"/>
+                <div className={style.mainPhotoContainer}>
+                    <img src={avatar} alt="portrait"/>
                     <div className={style.circle}>
                         <img src={circleText} alt="circle"/>
                     </div>
@@ -48,14 +48,13 @@ export const Avatar = () => {
             </div>
 
             <div className={style.mainBigPhoto}>
-                <div className={style.asd}>
-                <img src={bigAvatar} alt="portrait"/>
-                <div className={style.circle}>
-                    <img src={bigCircleText} alt="circle"/>
+                <div className={style.mainPhotoContainer}>
+                    <img src={bigAvatar} alt="portrait"/>
+                    <div className={style.circle}>
+                        <img src={bigCircleText} alt="circle"/>
+                    </div>
                 </div>
             </div>
-            </div>
-
 
 
         </section>

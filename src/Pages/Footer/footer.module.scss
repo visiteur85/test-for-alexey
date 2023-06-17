@@ -40,6 +40,7 @@
     justify-content: center;
     flex-direction: column;
     position: relative;
+
     &::before {
       content: "";
       position: absolute;
@@ -50,6 +51,7 @@
       height: 51px;
       background-color: $white;
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -95,5 +97,19 @@
 }
 
 
+.telegram:active {
+  fill: $darkGreen;
 
+  path {
+    stroke: white;
+  }
+}
+
+.mail:active {
+  fill: $darkGreen;
+
+  path {
+    stroke: white;
+  }
+}
 
