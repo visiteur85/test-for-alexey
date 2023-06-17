@@ -1,17 +1,17 @@
 import React, {useEffect, useState} from 'react';
 import style from './reviewsDesktop.module.scss';
-import photoRoman from '../../assets/pictures/Photos/rewievs/Роман.png';
-import photoAnastasia from '../../assets/pictures/Photos/rewievs/Анастасия Литвин.png';
-import photoDaria from '../../assets/pictures/Photos/rewievs/Дарья Стасевич.png';
-import photoSergey from '../../assets/pictures/Photos/rewievs/Сергей Барауля.png';
-import photoSergey1 from '../../assets/pictures/Photos/rewievs/Сергей Барауля1.png';
-import {ReactComponent as Lion} from "../../assets/pictures/svg/lion/Vector.svg";
-import {CardReview} from '../Rewies Desktop/CardReview/CardReview'
+import photoRoman from '../../../../assets/pictures/Photos/rewievs/Роман.png';
+import photoAnastasia from '../../../../assets/pictures/Photos/rewievs/Анастасия Литвин.png';
+import photoDaria from '../../../../assets/pictures/Photos/rewievs/Дарья Стасевич.png';
+import photoSergey from '../../../../assets/pictures/Photos/rewievs/Сергей Барауля.png';
+import photoSergey1 from '../../../../assets/pictures/Photos/rewievs/Сергей Барауля1.png';
+import {ReactComponent as Lion} from "../../../../assets/pictures/svg/lion/Vector.svg";
+import {CardReview} from './CardReview/CardReview'
 
 
-import {Title} from "../Title/Title";
-import avatarAlexey from '../../assets/pictures/Photos/rewievs/image 5.png'
-import {ReactComponent as Circle} from "../../assets/pictures/svg/circles/Обводка с пунктами.svg";
+import {Title} from "../../../../Components/Title/Title";
+import avatarAlexey from '../../../../assets/pictures/Photos/rewievs/image 5.png'
+import {ReactComponent as Circle} from "../../../../assets/pictures/svg/circles/Обводка с пунктами.svg";
 
 
 const sliderData = [

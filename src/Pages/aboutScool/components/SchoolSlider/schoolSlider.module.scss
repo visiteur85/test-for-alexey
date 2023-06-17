@@ -1,4 +1,4 @@
-@import "src/styles/variables";
+@import "../../../../styles/variables";
 
 .sliderWrapper {
   @media(min-width: 920px) {
@@ -56,7 +56,7 @@
       height: 35px;
       border: 1px solid $darkGreen;
       border-radius: 50%;
-      background: url("../../assets/pictures/svg/arrows/Vector 3.svg") no-repeat center;
+      background: url("../../../../assets/pictures/svg/arrows/Vector 3.svg") no-repeat center;
       cursor: pointer;
       @media(min-width: 920px) {
         width: 60px;
@@ -71,7 +71,7 @@
       height: 35px;
       border: 1px solid $darkGreen;
       border-radius: 50%;
-      background: url("../../assets/pictures/svg/arrows/Vector 3.svg") no-repeat center;
+      background: url("../../../../assets/pictures/svg/arrows/Vector 3.svg") no-repeat center;
       rotate: 180deg;
       cursor: pointer;
       @media(min-width: 920px) {
@@ -84,12 +84,12 @@
 
     .arrowLeft:active {
       rotate: 180deg;
-      background: url("../../assets/pictures/svg/arrows/Vector 3 white.svg") no-repeat center $darkGreen;
+      background: url("../../../../assets/pictures/svg/arrows/Vector 3 white.svg") no-repeat center $darkGreen;
 
     }
 
     .arrowRight:active {
-      background: url("../../assets/pictures/svg/arrows/Vector 3 white.svg") no-repeat center $darkGreen;
+      background: url("../../../../assets/pictures/svg/arrows/Vector 3 white.svg") no-repeat center $darkGreen;
       rotate: 0deg;
 
     }

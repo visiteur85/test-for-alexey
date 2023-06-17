@@ -3,8 +3,8 @@ import style from './header.module.scss';
 import logo from '../../assets/pictures/svg/logo/Лого главная.svg';
 import {ReactComponent as BurgerButton} from '../../assets/pictures/svg/burger/Group 14.svg';
 import {ReactComponent as CloseButton} from '../../assets/pictures/svg/closeButton/Выйти CTA.svg';
-import {NavMenu} from "../NavMenu/NavMenu";
-import { v4 as uuidv4 } from 'uuid';
+import {NavMenu} from "../../Components/NavMenu/NavMenu";
+
 
 
 export const Header = () => {
@@ -12,12 +12,12 @@ export const Header = () => {
 
 
     const menuList = [
-        {id: uuidv4(), name: 'Обо мне', path: 'aboutMe'},
-        {id: uuidv4(), name: 'Преподавание', path: 'teaching'},
-        {id: uuidv4(), name: 'О школе', path: 'school'},
-        {id: uuidv4(), name: 'Отзывы учеников', path: 'reviews'},
-        {id: uuidv4(), name: 'Контакты', path: 'contacts'},
-        {id: uuidv4(), name: 'Авторский курс', path: 'course'},
+        {id: 1, name: 'Обо мне', path: 'aboutMe'},
+        {id: 2, name: 'Преподавание', path: 'teaching'},
+        {id: 3, name: 'О школе', path: 'school'},
+        {id: 4, name: 'Отзывы учеников', path: 'reviews'},
+        {id: 5, name: 'Контакты', path: 'contacts'},
+        {id: 6, name: 'Авторский курс', path: 'course'},
 
 ]
 

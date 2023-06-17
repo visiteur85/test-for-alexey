@@ -1,0 +1,82 @@
+@import "../../../../styles/variables";
+.diagram {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .cardWrapper {
+    background: url('../../../../assets/pictures/png/цифры.png') center no-repeat;
+
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    @media(min-width: 920px) {
+      width: 109px;
+      height: 110px;
+      background: url('../../../../assets/pictures/png/цифрыБольшие.png') center no-repeat;
+    }
+
+    &:nth-child(2) {
+      background: url('../../../../assets/pictures/png/цифры1.png') center no-repeat;
+      @media(min-width: 920px) {
+        width: 109px;
+        height: 110px;
+        background: url('../../../../assets/pictures/png/цифры1Большие.png') center no-repeat;
+      }
+
+    }
+
+    &:nth-child(3) {
+      background: url('../../../../assets/pictures/png/цифры2.png') center no-repeat;
+      @media(min-width: 920px) {
+        width: 109px;
+        height: 110px;
+        background: url('../../../../assets/pictures/png/цифрыБольшие2.png') center no-repeat;
+      }
+    }
+
+    .cardText {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      .colorText {
+        color: $lightGreen
+      }
+
+      .strikethrough {
+        text-decoration: line-through;
+      }
+    }
+
+
+    .mainText {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 1px;
+      @media(min-width: 920px) {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+
+    .textCircle {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 17px;
+      @media(min-width: 920px) {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+
+}

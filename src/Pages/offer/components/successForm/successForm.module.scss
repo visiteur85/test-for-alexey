@@ -1,0 +1,61 @@
+@import "../../../../styles/variables";
+
+.success {
+  padding: 168px 0 0 0;
+  width: 93%;
+  margin: auto;
+  max-width: 343px;
+  border-radius: 0;
+  position: relative;
+  @media(min-width: 920px) {
+    max-width: 845px;
+    padding: 125px 0 0 0;
+    width: 50%;
+    border-radius: 15px;
+  }
+
+  p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $darkGreen;
+    margin-bottom: 56px;
+  }
+
+  .ok {
+    text-align: center;
+    margin-bottom: 176px;
+    @media(min-width: 920px) {
+
+      margin-bottom: 125px;
+    }
+  }
+}
+
+
+.closeButton:active {
+  fill: $darkGreen;
+
+  path {
+    stroke: white;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  @media(min-width: 920px) {
+    top: 32px;
+    right: 32px;
+  }
+}
+
+.lion {
+  position: absolute;
+  top: 0;
+
+
+
+}

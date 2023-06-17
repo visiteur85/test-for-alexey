@@ -1,13 +1,13 @@
-import daria from "../../assets/pictures/Photos/rewievs/Дарья Стасевич.png";
-import roman from "../../assets/pictures/Photos/rewievs/Роман.png";
-import anastasia from "../../assets/pictures/Photos/rewievs/Анастасия Литвин.png";
-import serguey from "../../assets/pictures/Photos/rewievs/Сергей Барауля.png";
+import daria from "../../../../assets/pictures/Photos/rewievs/Дарья Стасевич.png";
+import roman from "../../../../assets/pictures/Photos/rewievs/Роман.png";
+import anastasia from "../../../../assets/pictures/Photos/rewievs/Анастасия Литвин.png";
+import serguey from "../../../../assets/pictures/Photos/rewievs/Сергей Барауля.png";
 import React, {useState} from "react";
 import style from "./schoolSlider.module.scss";
 
 export const SchoolSlider = () => {
     const images = [
-        {id: 1, photo: daria},
+        {id: 1, photo: serguey},
         {id: 2, photo: roman},
         {id: 3, photo: anastasia},
         {id: 4, photo: serguey}

@@ -2,7 +2,7 @@ import React from 'react';
 import style from './aboutSchool.module.scss'
 import {Title} from "../../Components/Title/Title";
 
-import {SchoolSlider} from "../../Components/SchoolSlider/SchoolSlider";
+import {SchoolSlider} from "./components/SchoolSlider/SchoolSlider";
 
 export const AboutSchool = () => {
     return (

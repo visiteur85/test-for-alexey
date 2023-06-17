@@ -1,0 +1,29 @@
+@import "src/styles/variables";
+
+.btn {
+  display: block;
+  padding: 18px;
+  background-color: $white;
+  border: 1px solid $lightGreen;
+  border-radius: 60px;
+  cursor: pointer;
+  color: $darkGreen;
+  text-align: center;
+
+  span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    @media(min-width: 920px) {
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+}
+
+.btnSmall {
+  width: 160px;
+}
+.btnBig {
+  width: 224px;
+}

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import style from "../CardReview/cardReview.module.scss";
-import {ReactComponent as Close} from "../../../assets/pictures/svg/exit review mobile/Выйти CTA.svg";
-import {ReactComponent as Linked} from "../../../assets/pictures/svg/linked/Linked in logo@2x.svg";
+import style from "./cardReview.module.scss";
+import {ReactComponent as Close} from "../../../../../assets/pictures/svg/exit review mobile/Выйти CTA.svg";
+import {ReactComponent as Linked} from "../../../../../assets/pictures/svg/linked/Linked in logo@2x.svg";
 
 export const CardReview = ({person, index, row}) => {
     const [isShown, setShown] = useState(false)

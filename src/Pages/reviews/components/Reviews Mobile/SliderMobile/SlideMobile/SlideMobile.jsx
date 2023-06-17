@@ -1,7 +1,7 @@
 import styleSlide from "./slide.module.scss";
 import React from "react";
-import {ReactComponent as Close} from "../../../../assets/pictures/svg/exit review mobile/Выйти CTA.svg";
-import {ReactComponent as Linked} from "../../../../assets/pictures/svg/linked/Linked in logo.svg";
+import {ReactComponent as Close} from "../../../../../../assets/pictures/svg/exit review mobile/Выйти CTA.svg";
+import {ReactComponent as Linked} from "../../../../../../assets/pictures/svg/linked/Linked in logo.svg";
 
 export const SlideMobile = ({image, text, id, callBack, activeModal}) => {
 
