@@ -7,6 +7,7 @@ import {ReactComponent as LionBig} from "../../assets/pictures/svg/lion/Лев �
 import {Modal} from "../../Modal/Modal";
 import {Form} from "./components/form/Form";
 import {SuccessForm} from "./components/successForm/SuccessForm";
+import {Element} from "react-scroll";
 
 
 export const Offer = () => {
@@ -27,6 +28,7 @@ export const Offer = () => {
     }
     return (
         <>
+            <Element name='course'></Element>
             {isModal && <Modal>{isSuccess ? <SuccessForm setSuccess={submitForm}/> :
                 <Form formSubmit={setSuccess} setModal={onModal}/>}</Modal>}
             <section className={style.offerWrapper}>

@@ -12,9 +12,12 @@ import {ReactComponent as Signature} from "../../assets/pictures/svg/circles/К�
 
 export const Teaching = () => {
     return (
-        <section className={style.teaching}>
+        <>
             <Element name='teaching'></Element>
+        <section className={style.teaching}>
+
             <div className={style.title}>
+
                 <Title title="Преподавание"/>
             </div>
 
@@ -68,6 +71,7 @@ export const Teaching = () => {
             </div>
 
         </section>
+        </>
     );
 };
 

@@ -3,9 +3,12 @@ import style from './aboutSchool.module.scss'
 import {Title} from "../../Components/Title/Title";
 
 import {SchoolSlider} from "./components/SchoolSlider/SchoolSlider";
+import {Element} from "react-scroll";
 
 export const AboutSchool = () => {
     return (
+        <>
+            <Element name='school'></Element>
         <section className={style.aboutSchool}>
             <div className={style.title}>
                 <Title title='О школе ITEC'/>
@@ -22,6 +25,7 @@ export const AboutSchool = () => {
                 </p>
             </div>
         </section>
+        </>
     );
 };
 

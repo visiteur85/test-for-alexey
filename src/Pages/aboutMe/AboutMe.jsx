@@ -11,11 +11,15 @@ import {ReactComponent as JsBig} from "../../assets/pictures/svg/Lanquages/JS lo
 import {ReactComponent as Go} from "../../assets/pictures/svg/Lanquages/Go Small.svg";
 import {ReactComponent as PythonBig} from "../../assets/pictures/svg/Lanquages/Python.svg";
 import {ReactComponent as GoBig} from "../../assets/pictures/svg/Lanquages/Golang logo.svg";
+import {Element} from "react-scroll";
 
 
 export const AboutMe = () => {
     return (
+        <>
+            <Element name='aboutMe'></Element>
         <section className={style.aboutMe}>
+
             <div className={style.infoPhotoWrapp}>
                 <div className={style.info}>
                     <div className={style.titleAboutWrap}>
@@ -78,6 +82,7 @@ export const AboutMe = () => {
             </div>
 
         </section>
+        </>
     );
 };
 
