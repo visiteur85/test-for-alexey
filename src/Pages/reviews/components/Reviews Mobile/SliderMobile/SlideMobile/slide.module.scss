@@ -8,10 +8,12 @@
   .picture {
     margin-bottom: 8px;
     position: relative;
-  .closeButton {
-    position: absolute;
-    top:21px;
-  }
+
+    .closeButton {
+      position: absolute;
+      top: 21px;
+    }
+
     .close {
       position: absolute;
       top: 16px;
@@ -34,6 +36,7 @@
 
 
     }
+
     .shownText {
       overflow: hidden;
       text-overflow: ellipsis;
@@ -50,14 +53,16 @@
       font-size: 12px;
       line-height: 17px;
       color: $darkGreen;
+
       span {
         border-bottom: 1px solid $darkGreen;
+        cursor: pointer;
       }
     }
   }
 }
 
-img  {
+img {
   width: 100%;
 }
 

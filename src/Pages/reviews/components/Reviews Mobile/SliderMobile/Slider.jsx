@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import style from './slider.module.scss';
 import SwipeableViews from 'react-swipeable-views';
 
-import image1 from '../../../../../assets/pictures/Photos/reviews mobile/Анастасия Литвин.png';
 import image2 from '../../../../../assets/pictures/Photos/reviews mobile/Анастасия Литвин.png';
 import image3 from '../../../../../assets/pictures/Photos/reviews mobile/Анастасия Литвин.png';
+import image1 from '../../../../../assets/pictures/Photos/rewievs/Сергей Барауля.png'
 import {Modal} from "./ModalSlideMobile/Modal";
 import {SlideMobile} from "./SlideMobile/SlideMobile";
 
@@ -57,8 +57,8 @@ export const MySlider = () => {
                 index={currentSlide}
                 onChangeIndex={handleChangeSlide}
                 enableMouseEvents
-                resistance
-                containerStyle={{width: '65%'}}
+
+                containerStyle={{width: '83%'}}
 
             >
                 {slides.map((slide, index) => (
