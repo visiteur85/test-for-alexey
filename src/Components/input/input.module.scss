@@ -8,6 +8,7 @@ input {
   border: 1px solid $lightGreen;
   border-radius: 43px;
   text-align: center;
+
   &[type="text"] {
     color: $darkGreen;
     font-size: 14px;
@@ -15,8 +16,6 @@ input {
     line-height: 17px;
     opacity: 50%;
   }
-
-
 
 
 }

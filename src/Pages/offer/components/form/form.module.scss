@@ -11,11 +11,12 @@
     max-width: 845px;
     padding: 32px 0 50px 0;
     width: 50%;
-    box-shadow: 0px 100px 364px rgba(132, 156, 156, 0.07);
+    box-shadow: 0 100px 364px rgba(132, 156, 156, 0.07);
     border-radius: 15px;
 
 
   }
+
   .text {
     color: $black;
     font-weight: 400;
@@ -23,10 +24,12 @@
     line-height: 20px;
     text-align: center;
   }
+
   @media(min-width: 920px) {
     font-size: 16px;
     line-height: 22px;
   }
+
   & .text:first-of-type {
     margin-bottom: 18px;
     @media(min-width: 920px) {
@@ -40,6 +43,7 @@
       margin-bottom: 40px;
     }
   }
+
   .formText {
     font-weight: 400;
     font-size: 14px;
@@ -63,18 +67,20 @@
 }
 
 .btn {
- display: flex;
+  display: flex;
   justify-content: center
 }
+
 .closeButton {
   position: absolute;
-  top:10px;
-  right:10px;
+  top: 10px;
+  right: 10px;
   @media(min-width: 920px) {
-    top:32px;
-    right:32px;
+    top: 32px;
+    right: 32px;
   }
 }
+
 .closeButton:active {
   fill: $darkGreen;
 

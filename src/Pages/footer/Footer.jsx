@@ -35,7 +35,7 @@ export const Footer = () => {
                     <div className={style.messenger}>
                         <div className={style.telegram}>
                             <a href="tel: +375290000000">
-                            <Telegram/>
+                                <Telegram/>
                             </a>
                         </div>
                         <div className={style.bigTelegram}>
@@ -45,7 +45,7 @@ export const Footer = () => {
                         </div>
                         <div className={style.mail}>
                             <a href="mailto:ask@htmlbook.ru">
-                            <Mail/>
+                                <Mail/>
                             </a>
                         </div>
                         <div className={style.bigMail}>

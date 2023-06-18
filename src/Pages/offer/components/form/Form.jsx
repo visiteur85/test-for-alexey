@@ -6,15 +6,13 @@ import {ReactComponent as CloseButton} from "../../../../assets/pictures/svg/clo
 
 export const Form = ({setModal, formSubmit}) => {
 
-    const setModalOff = ()=> {
+    const setModalOff = () => {
         setModal()
     }
 
-    const setSubmit = ()=> {
+    const setSubmit = () => {
         formSubmit()
     }
-
-
 
 
     return (
@@ -26,15 +24,15 @@ export const Form = ({setModal, formSubmit}) => {
             <div className={style.formDesctop}>
                 <p className={style.formText}>Введите ваше имя</p>
                 <div className={style.input}>
-                <Input type='text'/>
+                    <Input type='text'/>
                 </div>
                 <p className={style.formText}>Укажите номер телефона</p>
                 <div className={style.input}>
-                <Input type='tel' className={style.input}/>
+                    <Input type='tel' className={style.input}/>
                 </div>
-              <div className={style.btn}>
-                <Button callback={setSubmit} text='Отправить' size='small'/>
-              </div>
+                <div className={style.btn}>
+                    <Button callback={setSubmit} text='Отправить' size='small'/>
+                </div>
             </div>
         </div>
     );

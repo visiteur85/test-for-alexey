@@ -17,10 +17,10 @@ export const Avatar = () => {
                     <h1 className={style.heading__title}>ALEX YUNCHITS </h1>
                     <div>
                         <a href="tel: +375290000000">
-                        <TelegramIcon className={style.telegram}/>
+                            <TelegramIcon className={style.telegram}/>
                         </a>
                         <a href="mailto:ask@htmlbook.ru">
-                        <MailIcon className={style.mail}/>
+                            <MailIcon className={style.mail}/>
                         </a>
                     </div>
                 </div>
@@ -35,11 +35,11 @@ export const Avatar = () => {
                         Я Full Stack<br/> разработчик и преподаватель.</p>
                     <div>
                         <a href="tel: +375290000000">
-                        <BigTelegramIcon className={style.telegram}/>
+                            <BigTelegramIcon className={style.telegram}/>
                         </a>
-                            <a href="mailto:ask@htmlbook.ru">
-                        <BigMailIcon className={style.mail}/>
-                            </a>
+                        <a href="mailto:ask@htmlbook.ru">
+                            <BigMailIcon className={style.mail}/>
+                        </a>
                     </div>
                 </div>
 

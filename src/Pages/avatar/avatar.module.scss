@@ -83,12 +83,12 @@
 }
 
 .mainPhoto {
-padding-right: 62px;
-  //position: relative;
+  padding-right: 62px;
   z-index: 0;
   @media(min-width: 920px) {
     display: none;
   }
+
   .mainPhotoContainer {;
     position: relative;
   }
@@ -100,9 +100,7 @@ padding-right: 62px;
   right: 0;
   transform: translateX(47%);
   z-index: 1;
-  //@media(min-width: 920px) {
-  //
-  //}
+
 
 }
 
@@ -114,7 +112,6 @@ padding-right: 62px;
     margin-right: 139px;
   }
 }
-
 
 
 .telegram:active {

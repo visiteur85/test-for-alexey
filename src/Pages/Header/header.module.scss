@@ -7,7 +7,7 @@
     padding: 56px 0 56px 0;
     width: 90%;
     max-width: 1281px;
-    margin:  0 auto 101.63px auto;
+    margin: 0 auto 101.63px auto;
   }
 
   &__inner {
@@ -39,11 +39,13 @@
     stroke: white;
   }
 }
+
 .navMenu {
   @media(min-width: 920px) {
- display: none;
+    display: none;
   }
 }
+
 .navMenuMobile {
   position: relative;
 

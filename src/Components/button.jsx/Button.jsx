@@ -8,7 +8,7 @@ export const Button = ({text, size, callback}) => {
     }
     return (
         <div>
-            <button onClick={onClick} className={`${style.btn} ${size === 'small' ? style.btnSmall : style.btnBig }`}>
+            <button onClick={onClick} className={`${style.btn} ${size === 'small' ? style.btnSmall : style.btnBig}`}>
                 <span>
                 {text}
                 </span>

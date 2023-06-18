@@ -7,7 +7,6 @@ import {NavMenu} from "../../Components/NavMenu/NavMenu";
 import {menuList} from "../../data/data";
 
 
-
 export const Header = () => {
     const [isNavMenuOpen, setNavMenuOpen] = useState(false);
 
@@ -35,7 +34,7 @@ export const Header = () => {
                         </div>
                         <div className={`${style.navMenuMobile__menu} ${isOpenMenu}`}>
                             <NavMenu callback={onClickMenuChange}
-                            menuList={menuList}/></div>
+                                     menuList={menuList}/></div>
                     </div>
                     <div className={`${isVisibleBurger} `}>
                         <BurgerButton onClick={onClickMenuChange} className={style.burgerButton}/>
@@ -43,7 +42,7 @@ export const Header = () => {
 
                 </div>
                 <div className={style.desktopMenu}>
-                <NavMenu  menuList={menuList} callback={onClickMenuChange}/>
+                    <NavMenu menuList={menuList} callback={onClickMenuChange}/>
                 </div>
 
             </div>
