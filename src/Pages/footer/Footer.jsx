@@ -49,7 +49,7 @@ export const Footer = () => {
                             </a>
                         </div>
                         <div className={style.bigMail}>
-                            <a href="tel: +375290000000">
+                            <a href="mailto:test@test.com">
                                 <BigMail/>
                             </a>
                         </div>
