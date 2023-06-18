@@ -8,10 +8,7 @@ import Reviews from "./Pages/reviews/Reviews";
 import React from "react";
 import {AboutSchool} from "./Pages/aboutScool/AboutSchool";
 import {Offer} from "./Pages/offer/Offer";
-import {Form} from "./Pages/offer/components/form/Form";
-import {SuccessForm} from "./Pages/offer/components/successForm/SuccessForm";
-import {Modal} from "./Modal/Modal";
-import {Footer} from "./Pages/Footer/Footer";
+import {Footer} from "./Pages/footer/Footer";
 
 
 function App() {

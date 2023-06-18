@@ -26,11 +26,11 @@ export const Form = ({setModal, formSubmit}) => {
             <div className={style.formDesctop}>
                 <p className={style.formText}>Введите ваше имя</p>
                 <div className={style.input}>
-                <Input/>
+                <Input type='text'/>
                 </div>
                 <p className={style.formText}>Укажите номер телефона</p>
                 <div className={style.input}>
-                <Input className={style.input}/>
+                <Input type='tel' className={style.input}/>
                 </div>
               <div className={style.btn}>
                 <Button callback={setSubmit} text='Отправить' size='small'/>

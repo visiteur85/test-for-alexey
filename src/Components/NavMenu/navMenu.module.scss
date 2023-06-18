@@ -19,7 +19,7 @@
       margin-bottom: 0;
       white-space: nowrap;
       &:not(:last-child){
-        margin-bottom: 0px;
+        margin-bottom: 0;
         margin-right: 32px;
       }
 
@@ -42,11 +42,21 @@
   }
 }
 .blockFooter {
+  @media(min-width: 920px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
+  }
   &__item {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
+    @media(min-width: 920px) {
+      font-size: 16px;
+      line-height: 19px;
+
+    }
     &:not(:last-child){
       margin-bottom: 16px;
     }

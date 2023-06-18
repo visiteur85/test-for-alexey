@@ -5,6 +5,8 @@ import {menuList} from "../../data/data";
 import {ReactComponent as Telegram} from "../../assets/pictures/svg/telegram/Telegram Messenger.svg";
 import {ReactComponent as Mail} from "../../assets/pictures/svg/mail/Vector.svg";
 import {Element} from "react-scroll";
+import {ReactComponent as BigTelegram} from "../../assets/pictures/svg/telegram/Big Telegram Messenger.svg";
+import {ReactComponent as BigMail} from "../../assets/pictures/svg/mail/Mail Messenger.svg";
 
 export const Footer = () => {
     return (
@@ -22,18 +24,34 @@ export const Footer = () => {
 
                 </div>
                 <div className={style.navMenu}>
-                    <h3>
+                    <h3 className={style.menuHeading}>
                         Меню
                     </h3>
+
                     <NavMenu block='footer' menuList={menuList}/>
+
                 </div>
                 <div className={style.links}>
                     <div className={style.messenger}>
                         <div className={style.telegram}>
+                            <a href="tel: +375290000000">
                             <Telegram/>
+                            </a>
+                        </div>
+                        <div className={style.bigTelegram}>
+                            <a href="tel: +375290000000">
+                                <BigTelegram/>
+                            </a>
                         </div>
                         <div className={style.mail}>
+                            <a href="mailto:ask@htmlbook.ru">
                             <Mail/>
+                            </a>
+                        </div>
+                        <div className={style.bigMail}>
+                            <a href="tel: +375290000000">
+                                <BigMail/>
+                            </a>
                         </div>
                     </div>
 
