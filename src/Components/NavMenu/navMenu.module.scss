@@ -12,6 +12,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    cursor: pointer;
 
     &:not(:last-child) {
       margin-bottom: 32px;
@@ -56,6 +57,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
+    cursor: pointer;
     @media(min-width: 920px) {
       font-size: 16px;
       line-height: 19px;
