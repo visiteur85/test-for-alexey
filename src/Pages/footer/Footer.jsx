@@ -44,7 +44,7 @@ export const Footer = () => {
                             </a>
                         </div>
                         <div className={style.mail}>
-                            <a href="mailto:ask@htmlbook.ru">
+                            <a href="mailto:test@test.com">
                                 <Mail/>
                             </a>
                         </div>

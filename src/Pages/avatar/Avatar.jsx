@@ -37,7 +37,7 @@ export const Avatar = () => {
                         <a href="tel: +375290000000">
                             <BigTelegramIcon className={style.telegram}/>
                         </a>
-                        <a href="mailto:ask@htmlbook.ru">
+                        <a href="mailto:test@test.com">
                             <BigMailIcon className={style.mail}/>
                         </a>
                     </div>
