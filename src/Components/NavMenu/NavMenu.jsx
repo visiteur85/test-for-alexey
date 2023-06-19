@@ -5,7 +5,6 @@ import {Link} from 'react-scroll';
 export const NavMenu = ({menuList, callback, block}) => {
 
 
-
     return (
         <nav>
             <ul className={`${block === 'footer' ? style.blockFooter : style.list}`}>
