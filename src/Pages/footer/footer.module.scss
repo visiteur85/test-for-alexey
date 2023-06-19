@@ -24,12 +24,13 @@
     width: 90%;
     max-width: 1281px;
     margin: auto;
+    gap: 160px;
   }
 
   .contacts {
     flex-basis: 48%;
     @media(min-width: 920px) {
-      flex-basis: 20%;
+      flex-basis: 5%;
     }
   }
 
@@ -39,6 +40,7 @@
       flex-grow: 1;
       margin: auto;
       align-self: center;
+      flex-wrap: wrap;
 
     }
 
@@ -57,6 +59,7 @@
     position: relative;
     @media(min-width: 920px) {
       justify-content: space-around;
+      flex-basis: 2%;
     }
 
     &::before {
