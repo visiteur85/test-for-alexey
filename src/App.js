@@ -16,6 +16,7 @@ function App() {
         <div className="App">
             <header className='header'>
                 <Header/>
+                test
             </header>
             <main className='main'>
                 <Avatar/>
