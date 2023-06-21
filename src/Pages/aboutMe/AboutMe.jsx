@@ -19,7 +19,7 @@ export const AboutMe = () => {
         <>
             <Element name='aboutMe'></Element>
             <section className={style.aboutMe}>
-
+<div className='container'>
                 <div className={style.infoPhotoWrapp}>
                     <div className={style.info}>
                         <div className={style.titleAboutWrap}>
@@ -81,7 +81,7 @@ export const AboutMe = () => {
 
 
                 </div>
-
+</div>
             </section>
         </>
     );

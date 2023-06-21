@@ -2,21 +2,20 @@
 
 .aboutMe {
   background: $backgroundGreen;
-  padding: 40px 16px 24px 16px;
+  padding: 40px 0 24px 0;
   @media(min-width: 920px) {
 
     padding: 80px 0 56px 0;
-    width: 90%;
-    max-width: 1281px;
-    margin: auto;
+
 
   }
 
   .infoPhotoWrapp {
     margin-bottom: 56px;
-    @media(min-width: 920px) {
+    @media(min-width: 1133px) {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 121px;
     }
 
     .info {
@@ -119,6 +118,7 @@
   .icons {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 
 
     .icon {

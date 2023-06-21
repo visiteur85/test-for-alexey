@@ -11,7 +11,9 @@ import bigCircleText from '../../assets/pictures/png/круговая подпи
 
 export const Avatar = () => {
     return (
-        <section className={style.avatar}>
+        <section>
+            <div className='container'>
+                <div className={style.avatar}>
             <div className={style.avatar__mobile}>
                 <div className={style.heading}>
                     <h1 className={style.heading__title}>ALEX YUNCHITS </h1>
@@ -63,8 +65,8 @@ export const Avatar = () => {
                     </div>
                 </div>
             </div>
-
-
+                </div>
+            </div>
         </section>
     );
 };

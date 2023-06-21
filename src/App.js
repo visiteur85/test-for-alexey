@@ -23,17 +23,17 @@ function App() {
                     <AboutMe/>
                 </div>
                 <Teaching/>
-                <div className='background'>
-                    <AboutSchool/>
-                </div>
-                <Reviews/>
-                <div className='background'>
-                    <Offer/>
-                </div>
+                {/*<div className='background'>*/}
+                {/*    <AboutSchool/>*/}
+                {/*</div>*/}
+                {/*<Reviews/>*/}
+                {/*<div className='background'>*/}
+                {/*    <Offer/>*/}
+                {/*</div>*/}
             </main>
-            <footer className='footer'>
-                <Footer/>
-            </footer>
+            {/*<footer className='footer'>*/}
+            {/*    <Footer/>*/}
+            {/*</footer>*/}
         </div>
     );
 }

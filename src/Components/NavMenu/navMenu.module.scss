@@ -3,7 +3,7 @@
 .list {
   display: flex;
   flex-direction: column;
-  @media(min-width: 920px) {
+  @media(min-width: 1010px) {
     flex-direction: row;
 
   }
@@ -18,9 +18,9 @@
       margin-bottom: 32px;
     }
 
-    @media(min-width: 920px) {
+    @media(min-width: 1010px) {
       margin-bottom: 0;
-      white-space: nowrap;
+      //white-space: nowrap;
       &:not(:last-child) {
         margin-bottom: 0;
         margin-right: 32px;
@@ -30,14 +30,14 @@
 
     a {
       color: white;
-      @media(min-width: 920px) {
+      @media(min-width: 1010px) {
         color: #262626;
       }
     }
 
     a:active {
       color: $green;
-      @media(min-width: 920px) {
+      @media(min-width: 1010px) {
         text-decoration: underline;
 
       }

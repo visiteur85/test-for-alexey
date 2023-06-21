@@ -1,18 +1,19 @@
 @import "../../styles/variables";
 
 .header {
-  padding: 21px 16px 0 16px;
-  margin-bottom: 2px;
-  @media(min-width: 920px) {
-    padding: 56px 0 56px 0;
-    width: 90%;
-    max-width: 1281px;
-    margin: 0 auto 101.63px auto;
+  width: 100%;
+  padding-top: 5px;
+  z-index: 999;
+  @media(min-width: 1010px) {
+    padding-top: 58px;
+    margin-bottom: 80px;
+
   }
 
   &__inner {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     align-items: center;
 
   }
@@ -21,7 +22,7 @@
 .logo {
   width: 150px;
   height: 36px;
-  @media(min-width: 920px) {
+  @media(min-width: 1010px) {
     width: 204px;
     height: 55.77px;
 
@@ -41,7 +42,7 @@
 }
 
 .navMenu {
-  @media(min-width: 920px) {
+  @media(min-width: 1010px) {
     display: none;
   }
 }
@@ -75,7 +76,7 @@
 
 .desktopMenu {
   display: none;
-  @media(min-width: 920px) {
+  @media(min-width: 1010px) {
     display: block;
   }
 }

@@ -5,5 +5,7 @@ export const menuList = [
     {id: 4, name: 'Отзывы учеников', path: 'reviews'},
     {id: 5, name: 'Контакты', path: 'contacts'},
     {id: 6, name: 'Авторский курс', path: 'course'},
+    {id: 7, name: 'Видео о курсах', path: 'video'},
+    {id: 8, name: 'Пробные уроки', path: ''},
 
 ]

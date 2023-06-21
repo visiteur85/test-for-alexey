@@ -1,18 +1,18 @@
 @import "src/styles/variables";
 
 .avatar {
-  padding: 0 16px 35px 16px;
-  @media(min-width: 920px) {
+  //padding: 0 16px 35px 16px;
+  @media(min-width: 1010px) {
+
     display: flex;
     flex-direction: row-reverse;
     align-self: start;
     justify-content: flex-end;
     position: relative;
     z-index: 0;
-    padding: 56px 0 56px 0;
-    width: 90%;
-    max-width: 1281px;
-    margin: auto;
+    //padding: 56px 0 56px 0;
+    padding-bottom: 57px;
+    gap: 60px
   }
 
   &__mobile {
@@ -60,7 +60,7 @@
 
 .telegram {
   margin-right: 8px;
-  @media(min-width: 920px) {
+  @media(min-width: 1010px) {
     margin-right: 22px;
   }
 }
@@ -71,7 +71,7 @@
   line-height: 20px;
   color: #262626;
   margin-bottom: 24px;
-  @media(min-width: 920px) {
+  @media(min-width: 1010px) {
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
@@ -83,7 +83,7 @@
 }
 
 .mainPhoto {
-  padding-right: 62px;
+  //padding-right: 62px;
   z-index: 0;
   @media(min-width: 920px) {
     display: none;
@@ -95,11 +95,16 @@
 }
 
 .circle {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  transform: translateX(47%);
-  z-index: 1;
+  display: none;
+
+  @media(min-width: 1010px) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(47%);
+    z-index: 1;
+  }
 
 
 }
@@ -109,7 +114,7 @@
   @media(min-width: 920px) {
     display: block;
     position: relative;
-    margin-right: 139px;
+    //margin-right: 139px;
   }
 }
 
