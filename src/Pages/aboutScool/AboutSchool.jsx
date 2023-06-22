@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './aboutSchool.module.scss'
-import {Title} from "../../Components/Title/Title";
+import {Title} from "../../Components/title/Title";
 
 import {SchoolSlider} from "./components/SchoolSlider/SchoolSlider";
 import {Element} from "react-scroll";

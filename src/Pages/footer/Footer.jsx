@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './footer.module.scss'
-import {NavMenu} from "../../Components/NavMenu/NavMenu";
+import {NavMenu} from "../../Components/navMenu/NavMenu";
 import {menuList} from "../../data/data";
 import {ReactComponent as Telegram} from "../../assets/pictures/svg/telegram/Telegram Messenger.svg";
 import {ReactComponent as Mail} from "../../assets/pictures/svg/mail/Vector.svg";

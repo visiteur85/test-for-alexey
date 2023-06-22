@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './aboutMe.module.scss'
-import {Title} from "../../Components/Title/Title";
+import {Title} from "../../Components/title/Title";
 import photoAboutMe from '../../assets/pictures/Photos/Фото обо Мне.png'
 import photoAboutMeBig from '../../assets/pictures/Photos/20220614_155534_075 1.png'
 import circles from '../../assets/pictures/svg/circles/Круги-пункты.png'

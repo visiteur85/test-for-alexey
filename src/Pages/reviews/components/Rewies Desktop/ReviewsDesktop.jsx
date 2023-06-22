@@ -9,7 +9,7 @@ import {ReactComponent as Lion} from "../../../../assets/pictures/svg/lion/Vecto
 import {CardReview} from './CardReview/CardReview'
 
 
-import {Title} from "../../../../Components/Title/Title";
+import {Title} from "../../../../Components/title/Title";
 import avatarAlexey from '../../../../assets/pictures/Photos/rewievs/image 5.png'
 import {ReactComponent as Circle} from "../../../../assets/pictures/svg/circles/Обводка с пунктами.svg";
 

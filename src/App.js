@@ -1,5 +1,5 @@
 import './App.css';
-import {Header} from "./Pages/Header/Header";
+import {Header} from "./Pages/header/Header";
 import {Avatar} from "./Pages/avatar/Avatar";
 import {AboutMe} from "./Pages/aboutMe/AboutMe";
 
