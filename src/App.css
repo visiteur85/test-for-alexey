@@ -22,7 +22,7 @@
 
 }
 
-@media (min-width: 1010px) {
+@media (min-width: 1024px) {
     .header {
         position: static;
     }
@@ -32,7 +32,7 @@
     margin-top: 100px;
 }
 
-@media (min-width: 920px) {
+@media (min-width: 1024px) {
     .main {
         margin-top: 0;
     }

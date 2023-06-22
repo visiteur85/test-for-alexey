@@ -2,7 +2,7 @@
 
 .avatar {
   //padding: 0 16px 35px 16px;
-  @media(min-width: 1010px) {
+  @media(min-width: 1024px) {
 
     display: flex;
     flex-direction: row-reverse;
@@ -12,18 +12,18 @@
     z-index: 0;
     //padding: 56px 0 56px 0;
     padding-bottom: 57px;
-    gap: 60px
+    gap: 160px
   }
 
   &__mobile {
-    @media(min-width: 920px) {
+    @media(min-width: 1024px) {
       display: none;
     }
   }
 
   &__desktop {
     display: none;
-    @media(min-width: 920px) {
+    @media(min-width: 1024px) {
       display: block;
     }
   }
@@ -35,7 +35,7 @@
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 24px;
-    @media(min-width: 920px) {
+    @media(min-width: 1024px) {
       display: block;
     }
 
@@ -46,7 +46,7 @@
       letter-spacing: calc(1em / 7);
       color: $darkGreen;
 
-      @media(min-width: 920px) {
+      @media(min-width: 1024px) {
         font-weight: 600;
         font-size: 54px;
         line-height: 63px;
@@ -60,7 +60,7 @@
 
 .telegram {
   margin-right: 8px;
-  @media(min-width: 1010px) {
+  @media(min-width: 1024px) {
     margin-right: 22px;
   }
 }
@@ -71,7 +71,7 @@
   line-height: 20px;
   color: #262626;
   margin-bottom: 24px;
-  @media(min-width: 1010px) {
+  @media(min-width: 1024px) {
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
@@ -85,19 +85,27 @@
 .mainPhoto {
   //padding-right: 62px;
   z-index: 0;
-  @media(min-width: 920px) {
+  @media(min-width: 768px) {
+   //width: 70%;
+   // margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+  }
+  @media(min-width: 1024px) {
     display: none;
   }
 
   .mainPhotoContainer {;
     position: relative;
+
   }
 }
 
 .circle {
   display: none;
 
-  @media(min-width: 1010px) {
+  @media(min-width: 1024px) {
     display: block;
     position: absolute;
     bottom: 0;
@@ -111,7 +119,7 @@
 
 .mainBigPhoto {
   display: none;
-  @media(min-width: 920px) {
+  @media(min-width: 1024px) {
     display: block;
     position: relative;
     //margin-right: 139px;

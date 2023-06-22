@@ -19,10 +19,10 @@ function App() {
             </header>
             <main className='main'>
                 <Avatar/>
-                <div className='background'>
-                    <AboutMe/>
-                </div>
-                <Teaching/>
+                {/*<div className='background'>*/}
+                {/*    <AboutMe/>*/}
+                {/*</div>*/}
+                {/*<Teaching/>*/}
                 {/*<div className='background'>*/}
                 {/*    <AboutSchool/>*/}
                 {/*</div>*/}
