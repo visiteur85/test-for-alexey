@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './teaching.module.scss'
-import {Title} from "../../Components/Title/Title";
+import {Title} from "../../Components/title/Title";
 import {Element} from 'react-scroll';
 import teachingPhoto from '../../assets/pictures/Photos/Фото Преподавание.png';
 import teachingPhotoBig from '../../assets/pictures/Photos/Big Фото Преподавание.png';
