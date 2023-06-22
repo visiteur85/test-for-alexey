@@ -1,13 +1,11 @@
 @import "src/styles/variables";
 
 .offerWrapper {
-  padding: 30px 16px 62px 16px;
-  @media(min-width: 920px) {
+  padding: 30px 0 62px 0;
+  @media(min-width: 1024px) {
     padding: 80px 0 56px 0;
-    width: 90%;
-    max-width: 1281px;
-    margin: auto;
-    display: flex;
+
+
 
   }
 
@@ -16,10 +14,11 @@
     border-radius: 15px 15px 0 0;
     padding: 32px 9px 17px 20px;
     position: relative;
-    @media(min-width: 920px) {
+    @media(min-width: 1024px) {
       flex: 0 0 60%;
       padding: 56px 104px 41px 110px;
       border-radius: 15px 0 0 15px;
+      border: 1px solid red;
 
     }
 
@@ -28,7 +27,7 @@
       right: 0;
       top: 0;
       display: block;
-      @media(min-width: 920px) {
+      @media(min-width: 1024px) {
         display: none;
 
       }
@@ -39,7 +38,7 @@
       right: 0;
       top: 0;
       display: none;
-      @media(min-width: 920px) {
+      @media(min-width: 1024px) {
         display: block;
 
       }
@@ -52,7 +51,7 @@
       font-weight: 600;
       font-size: 18px;
       line-height: 21px;
-      @media(min-width: 920px) {
+      @media(min-width: 1024px) {
         text-align: initial;
         font-size: 34px;
         line-height: 40px;
@@ -66,7 +65,7 @@
       font-size: 16px;
       margin-bottom: 27px;
       text-align: center;
-      @media(min-width: 920px) {
+      @media(min-width: 1024px) {
         text-align: initial;
         font-size: 18px;
         line-height: 21px;
@@ -79,7 +78,7 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 20px;
-      @media(min-width: 920px) {
+      @media(min-width: 1024px) {
         font-size: 16px;
         line-height: 22px;
       }
@@ -95,7 +94,7 @@
     border-radius: 0 0 15px 15px;
     display: flex;
     justify-content: center;
-    @media(min-width: 920px) {
+    @media(min-width: 1024px) {
       flex: 1;
       flex-direction: column;
       align-items: center;
@@ -109,7 +108,7 @@
 
 .offer .text:first-of-type {
   margin-bottom: 12px;
-  @media(min-width: 920px) {
+  @media(min-width: 1024px) {
     margin-bottom: 16px;
 
   }
@@ -117,7 +116,7 @@
 
 .offer .text:nth-of-type(2) {
   margin-bottom: 15px;
-  @media(min-width: 920px) {
+  @media(min-width: 1024px) {
     margin-bottom: 32px;
 
   }

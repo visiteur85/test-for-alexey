@@ -27,9 +27,9 @@ function App() {
                     <AboutSchool/>
                 </div>
                 <Reviews/>
-                {/*<div className='background'>*/}
-                {/*    <Offer/>*/}
-                {/*</div>*/}
+                <div className='background'>
+                    <Offer/>
+                </div>
             </main>
             {/*<footer className='footer'>*/}
             {/*    <Footer/>*/}

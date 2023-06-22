@@ -5,6 +5,15 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  @media(min-width: 768px) {
+    justify-content: space-around;
+
+  }
+  @media(min-width: 1024px) {
+    justify-content: space-between;
+
+  }
+
 
   .cardWrapper {
     background: url('../../../../assets/pictures/png/цифры.png') center no-repeat;
@@ -16,7 +25,7 @@
     justify-content: center;
     text-align: center;
     color: white;
-    @media(min-width: 920px) {
+    @media(min-width: 1024px) {
       width: 109px;
       height: 110px;
       background: url('../../../../assets/pictures/png/цифрыБольшие.png') center no-repeat;
@@ -24,7 +33,7 @@
 
     &:nth-child(2) {
       background: url('../../../../assets/pictures/png/цифры1.png') center no-repeat;
-      @media(min-width: 920px) {
+      @media(min-width: 1024px) {
         width: 109px;
         height: 110px;
         background: url('../../../../assets/pictures/png/цифры1Большие.png') center no-repeat;
@@ -34,7 +43,7 @@
 
     &:nth-child(3) {
       background: url('../../../../assets/pictures/png/цифры2.png') center no-repeat;
-      @media(min-width: 920px) {
+      @media(min-width: 1024px) {
         width: 109px;
         height: 110px;
         background: url('../../../../assets/pictures/png/цифрыБольшие2.png') center no-repeat;
@@ -73,7 +82,7 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 17px;
-      @media(min-width: 920px) {
+      @media(min-width: 1024px) {
         font-size: 16px;
         line-height: 22px;
       }
