@@ -15,6 +15,7 @@ export const Teaching = () => {
         <>
             <Element name='teaching'></Element>
             <section className={style.teaching}>
+                <div className='container'>
 
                 <div className={style.title}>
 
@@ -73,7 +74,7 @@ export const Teaching = () => {
                     </div>
 
                 </div>
-
+                </div>
             </section>
         </>
     );
