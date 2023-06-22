@@ -52,17 +52,7 @@
       }
     }
 
-    .bigLion {
-      display: none;
-      @media(min-width: 1920px) {
-        display: block;
-        position: absolute;
-        z-index: 0;
-        right: 1210px;
-        top: -50px;
 
-      }
-    }
 
     .teachingPhoto {
       float: left;
@@ -171,4 +161,17 @@
 
 
 
+.bigLion {
+  display: none;
+  @media(min-width: 1920px) {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    //right: 1210px;
+    //top: -50px;
+    top:100px;
+    right: 1120px;
+    opacity: 30%;
 
+  }
+}

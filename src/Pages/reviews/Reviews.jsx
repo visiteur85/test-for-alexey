@@ -10,11 +10,13 @@ const Reviews = () => {
         <>
             <Element name='reviews'></Element>
             <section className={style.reviews}>
-                <div className={style.reviewsMobile}>
-                    <ReviewsMobile/>
-                </div>
-                <div className={style.reviewsDesktop}>
-                    <ReviewsDesktop/>
+                <div className='container'>
+                    <div className={style.reviewsMobile}>
+                        <ReviewsMobile/>
+                    </div>
+                    <div className={style.reviewsDesktop}>
+                        <ReviewsDesktop/>
+                    </div>
                 </div>
             </section>
         </>

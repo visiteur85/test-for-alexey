@@ -1,7 +1,7 @@
 @import "../../../../styles/variables";
 
 .sliderWrapper {
-  @media(min-width: 920px) {
+  @media(min-width: 1024px) {
     display: flex;
     flex-direction: column;
 
@@ -17,7 +17,7 @@
 
     }
 
-    @media(min-width: 920px) {
+    @media(min-width: 1024px) {
       display: none;
 
     }
@@ -26,7 +26,7 @@
 
   .sliderDesktop {
     display: none;
-    @media(min-width: 920px) {
+    @media(min-width: 1024px) {
       display: flex;
       order: 2;
       img {
@@ -41,7 +41,7 @@
   .buttons {
     display: flex;
     justify-content: flex-end;
-    @media(min-width: 920px) {
+    @media(min-width: 1024px) {
       margin-bottom: 32px;
       order: 1;
 
@@ -58,7 +58,7 @@
       border-radius: 50%;
       background: url("../../../../assets/pictures/svg/arrows/Vector 3.svg") no-repeat center;
       cursor: pointer;
-      @media(min-width: 920px) {
+      @media(min-width: 1024px) {
         width: 60px;
         height: 60px;
 
@@ -74,7 +74,7 @@
       background: url("../../../../assets/pictures/svg/arrows/Vector 3.svg") no-repeat center;
       rotate: 180deg;
       cursor: pointer;
-      @media(min-width: 920px) {
+      @media(min-width: 1024px) {
         width: 60px;
         height: 60px;
 

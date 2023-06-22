@@ -4,9 +4,15 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  width: 297px;
+  //width: 297px;
   border-radius: 15px;
   transition: transform 0.5s ease;
+  @media(min-width: 1024px) {
+    max-width: 25%;
+  }
+  @media(min-width: 1600px) {
+    width: 297px;
+  }
 
 
   .photoWrap {
@@ -24,6 +30,7 @@
     img {
       object-fit: cover;
       max-width: 100%;
+
 
     }
 
@@ -88,26 +95,39 @@
   }
 
   &.index11 {
-    right: 0;
+    right: 10px;
+
   }
 
   &.index02 {
-    left: 100px;
+    left: 80px;
   }
 
   &.index12 {
-    left: 885px;
+    right: 80px;
+
   }
 
   &.index22 {
-    right: 490px;
-    top: 50px
+    left: 0;
+    right: 0;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .cardWrapIncrease {
-  transform: scale(1.4);
-  z-index: 8;
+  @media(min-width: 1024px) {
+    z-index: 8;
+    transform: scale(1.1);
+  }
+  @media(min-width: 1600px) {
+    transform: scale(1.4);
+
+  }
+
+
 }
 
 

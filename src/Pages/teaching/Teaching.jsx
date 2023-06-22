@@ -5,7 +5,6 @@ import {Element} from 'react-scroll';
 import teachingPhoto from '../../assets/pictures/Photos/Фото Преподавание.png';
 import teachingPhotoBig from '../../assets/pictures/Photos/Big Фото Преподавание.png';
 import justAlexey from '../../assets/pictures/Photos/20220614_160615 2.png';
-// import justAlexeyBig from '../../assets/pictures/Photos/Rectangle 19.png';
 import {ReactComponent as Lion} from "../../assets/pictures/svg/lion/lionSmall.svg";
 import {ReactComponent as BigLion} from "../../assets/pictures/svg/lion/bigLion.svg";
 import {ReactComponent as Signature} from "../../assets/pictures/svg/circles/Круговая надпись.svg";
@@ -16,6 +15,9 @@ export const Teaching = () => {
             <Element name='teaching'></Element>
             <section className={style.teaching}>
                 <div className='container'>
+                    <div className={style.bigLion}>
+                        <BigLion/>
+                    </div>
 
                 <div className={style.title}>
 
@@ -28,9 +30,7 @@ export const Teaching = () => {
                     <div className={style.lion}>
                         <Lion/>
                     </div>
-                    <div className={style.bigLion}>
-                        <BigLion/>
-                    </div>
+
                     <div className={style.teachingPhoto}>
                         <img src={teachingPhoto} alt="Alexey is working"/>
                     </div>

@@ -23,10 +23,10 @@ function App() {
                     <AboutMe/>
                 </div>
                 <Teaching/>
-                {/*<div className='background'>*/}
-                {/*    <AboutSchool/>*/}
-                {/*</div>*/}
-                {/*<Reviews/>*/}
+                <div className='background'>
+                    <AboutSchool/>
+                </div>
+                <Reviews/>
                 {/*<div className='background'>*/}
                 {/*    <Offer/>*/}
                 {/*</div>*/}
