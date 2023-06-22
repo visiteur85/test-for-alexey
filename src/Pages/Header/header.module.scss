@@ -4,7 +4,7 @@
   width: 100%;
   padding-top: 5px;
   z-index: 999;
-  @media(min-width: 1010px) {
+  @media(min-width: 1024px) {
     padding-top: 58px;
     margin-bottom: 80px;
 
@@ -22,7 +22,7 @@
 .logo {
   width: 150px;
   height: 36px;
-  @media(min-width: 1010px) {
+  @media(min-width: 1024px) {
     width: 204px;
     height: 55.77px;
 
@@ -42,7 +42,7 @@
 }
 
 .navMenu {
-  @media(min-width: 1010px) {
+  @media(min-width: 1024px) {
     display: none;
   }
 }
@@ -76,7 +76,7 @@
 
 .desktopMenu {
   display: none;
-  @media(min-width: 1010px) {
+  @media(min-width: 1024px) {
     display: block;
   }
 }
