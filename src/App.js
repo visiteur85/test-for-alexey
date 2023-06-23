@@ -9,6 +9,7 @@ import React from "react";
 import {AboutSchool} from "./Pages/aboutScool/AboutSchool";
 import {Offer} from "./Pages/offer/Offer";
 import {Footer} from "./Pages/footer/Footer";
+import {Video} from "./Pages/video/Video";
 
 
 function App() {
@@ -19,9 +20,11 @@ function App() {
             </header>
             <main className='main'>
                 <Avatar/>
+                <Video/>
                 <div className='background'>
                     <AboutMe/>
                 </div>
+
                 <Teaching/>
                 <div className='background'>
                     <AboutSchool/>

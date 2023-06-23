@@ -46,11 +46,12 @@
 }
 
 .blockFooter {
-  @media(min-width: 920px) {
+  @media(min-width: 1024px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px
 
   }
 

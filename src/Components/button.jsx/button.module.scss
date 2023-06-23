@@ -9,6 +9,7 @@
   cursor: pointer;
   color: $darkGreen;
   text-align: center;
+  white-space: nowrap;
 
   &:hover {
     color: $white;
