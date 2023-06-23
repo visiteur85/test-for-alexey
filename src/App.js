@@ -31,9 +31,9 @@ function App() {
                     <Offer/>
                 </div>
             </main>
-            {/*<footer className='footer'>*/}
-            {/*    <Footer/>*/}
-            {/*</footer>*/}
+            <footer className='footer'>
+                <Footer/>
+            </footer>
         </div>
     );
 }

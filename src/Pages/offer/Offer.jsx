@@ -33,6 +33,7 @@ export const Offer = () => {
                 <Form formSubmit={setSuccess} setModal={onModal}/>}</Modal>}
             <section className={style.offerWrapper}>
                 <div className='container'>
+                    <div className={style.wrapper}>
                 <div className={style.offer}>
                     <Lion className={style.lion}/>
                     <LionBig className={style.bigLion}/>
@@ -50,6 +51,7 @@ export const Offer = () => {
                 <div className={style.button}>
                     <Button callback={onModal} text="Оставить заявку"/>
                 </div>
+                    </div>
                 </div>
             </section>
         </>
