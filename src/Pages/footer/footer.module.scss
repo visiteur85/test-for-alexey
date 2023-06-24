@@ -1,46 +1,29 @@
 @import "src/styles/variables";
 
 
-@media(min-width: 920px) {
-
-  padding: 80px 0 56px 0;
-  width: 90%;
-  max-width: 1281px;
-  margin: auto;
-}
-
-
-.footer {
+.footer__wrapper {
   padding: 41px 0 24px 0;
-  width: 90%;
-  //max-width: 375px;
-  margin: auto;
   display: flex;
-
-
+  justify-content: space-between;
   @media(min-width: 920px) {
-
     padding: 92px 0 97px 0;
-    width: 90%;
-    max-width: 1281px;
-    margin: auto;
-    gap: 160px;
+    gap: 20px;
+
   }
 
   .contacts {
-    flex-basis: 48%;
+    //flex-basis: 48%;
     @media(min-width: 920px) {
-      flex-basis: 5%;
     }
   }
 
   .navMenu {
-    flex-basis: 42%;
-    @media(min-width: 920px) {
-      flex-grow: 1;
-      margin: auto;
+    //flex-basis: 42%;
+    @media(min-width: 768px) {
+      //flex-grow: 1;
+      //margin: auto;
       align-self: center;
-      flex-wrap: wrap;
+      //flex-wrap: wrap;
 
     }
 
@@ -52,14 +35,14 @@
   }
 
   .links {
-    flex-basis: 10%;
+    //flex-basis: 10%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     position: relative;
     @media(min-width: 920px) {
       justify-content: space-around;
-      flex-basis: 2%;
+      //flex-basis: 2%;
     }
 
     &::before {

@@ -3,26 +3,29 @@
 .reviews {
 
 
-  padding: 40px 0px 24px 16px;
+  padding: 40px 0 24px 0;
   @media(min-width: 920px) {
     //padding: 80px 29% 56px 19%;
     padding: 80px 0 56px 0;
-    width: 90%;
-    max-width: 1281px;
-    margin: auto;
+
   }
 
   .reviewsMobile {
     display: block;
-    @media(min-width: 1440px) {
+    @media(min-width: 768px) {
+     width: 50%;
+      margin: 0 auto;
+    }
+    @media(min-width: 1024px) {
       display: none;
     }
   }
 
   .reviewsDesktop {
     display: none;
-    @media(min-width: 1440px) {
+    @media(min-width: 1024px) {
       display: block;
+      margin-bottom: 90px;
     }
   }
 

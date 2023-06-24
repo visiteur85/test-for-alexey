@@ -2,21 +2,20 @@
 
 .aboutMe {
   background: $backgroundGreen;
-  padding: 40px 16px 24px 16px;
-  @media(min-width: 920px) {
+  padding: 40px 0 24px 0;
+  @media(min-width: 1024px) {
 
     padding: 80px 0 56px 0;
-    width: 90%;
-    max-width: 1281px;
-    margin: auto;
+
 
   }
 
   .infoPhotoWrapp {
     margin-bottom: 56px;
-    @media(min-width: 920px) {
+    @media(min-width: 1024px) {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 121px;
     }
 
     .info {
@@ -24,6 +23,7 @@
 
       .titleAboutWrap {
         margin-bottom: 24px;
+
       }
 
       .presentation {
@@ -32,7 +32,7 @@
         line-height: 20px;
         color: #262626;
         margin-bottom: 24px;
-        @media(min-width: 920px) {
+        @media(min-width: 1024px) {
           font-size: 20px;
           line-height: 28px;
         }
@@ -46,7 +46,7 @@
       .description {
         padding-left: 59px;
         margin-bottom: 24px;
-        @media(min-width: 920px) {
+        @media(min-width: 1024px) {
           padding-left: 121px;
           margin-bottom: 0;
         }
@@ -56,7 +56,7 @@
           font-size: 14px;
           line-height: 20px;
           color: #262626;
-          @media(min-width: 920px) {
+          @media(min-width: 1024px) {
             font-size: 16px;
             line-height: 22px;
           }
@@ -64,7 +64,7 @@
 
         li:not(:last-child) {
           margin-bottom: 16px;
-          @media(min-width: 920px) {
+          @media(min-width: 1024px) {
             margin-bottom: 24px;
           }
         }
@@ -75,14 +75,15 @@
         position: absolute;
         top: 123px;
         left: -16px;
-        @media(min-width: 920px) {
+        opacity: 50%;
+        @media(min-width: 1024px) {
           display: none
         }
       }
 
       .bigCircles {
         display: none;
-        @media(min-width: 920px) {
+        @media(min-width: 1024px) {
           display: block;
           position: absolute;
           top: 135px;
@@ -95,7 +96,16 @@
 
     .photo {
       padding-left: 59px;
-      @media(min-width: 920px) {
+      @media(min-width: 768px) {
+        //width: 70%;
+        // margin: 0 auto;
+        padding-left: 0;
+        width: 50%;
+        margin: 0 auto;
+
+
+      }
+      @media(min-width: 1024px) {
         display: none;
 
       }
@@ -103,9 +113,12 @@
 
     .photoBig {
       display: none;
-      @media(min-width: 920px) {
+      @media(min-width: 1024px) {
         display: block;
         margin-left: 70px;
+        img {
+          height: 100%;
+        }
 
       }
     }
@@ -119,6 +132,7 @@
   .icons {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 
 
     .icon {
@@ -138,9 +152,11 @@
       .allSvgComponent {
         display: block;
         padding-bottom: 5px;
-        @media(min-width: 920px) {
+
+        @media(min-width: 768px) {
           width: 0;
           height: 0;
+          ;
 
         }
       }
@@ -148,13 +164,13 @@
       .allSvgComponentBig {
         display: none;
 
-        @media(min-width: 920px) {
+        @media(min-width: 768px) {
           display: block;
           padding-bottom: 20px;
         }
       }
 
-      @media(min-width: 920px) {
+      @media(min-width: 1024px) {
         width: 407px;
         height: 298px;
         border-radius: 15px;
@@ -169,7 +185,7 @@
 
       .goComponent {
         margin-bottom: 10px;
-        @media(min-width: 920px) {
+        @media(min-width: 1024px) {
           margin-bottom: 15px;
 
         }

@@ -21,7 +21,9 @@ export const Header = () => {
 
 
     return (
+
         <section className={style.header}>
+            <div className='container'>
             <div className={style.header__inner}>
                 <div className={style.logo}>
                     <img className={style.logo} src={logo} alt="logo"/>
@@ -46,7 +48,9 @@ export const Header = () => {
                 </div>
 
             </div>
+            </div>
         </section>
+
     );
 };
 

@@ -19,69 +19,69 @@ export const AboutMe = () => {
         <>
             <Element name='aboutMe'></Element>
             <section className={style.aboutMe}>
+                <div className='container'>
+                    <div className={style.infoPhotoWrapp}>
+                        <div className={style.info}>
+                            <div className={style.titleAboutWrap}>
+                                <Title title='Обо мне'/>
+                            </div>
+                            <p className={style.presentation}>Давайте знакомиться! <span className={style.name}>Я - Алексей Юнчиц.</span>
+                            </p>
+                            <ul className={style.description}>
+                                <li>Я Full Stack Developer.
+                                    Работаю разработчиком уже 15 лет,
+                                    начинал в 2007 году.
+                                </li>
+                                <li>Однако разработчик — не единственная моя профессия.
+                                    Еще я преподаватель. Подробнее
+                                    об этом расскажу дальше.
+                                </li>
+                                <li>Но помимо вышеперечисленного — я просто человек. Люблю природу, путешевствовать и
+                                    рыбачить.
+                                    И, конечно же, делиться знаниями!
+                                </li>
+                            </ul>
+                            <div className={style.circles}>
+                                <img src={circles} alt="circle"/>
+                            </div>
+                            <div className={style.bigCircles}>
+                                <img src={bigCircles} alt="circle"/>
+                            </div>
 
-                <div className={style.infoPhotoWrapp}>
-                    <div className={style.info}>
-                        <div className={style.titleAboutWrap}>
-                            <Title title='Обо мне'/>
                         </div>
-                        <p className={style.presentation}>Давайте знакомиться! <span className={style.name}>Я - Алексей Юнчиц.</span>
-                        </p>
-                        <ul className={style.description}>
-                            <li>Я Full Stack Developer.
-                                Работаю разработчиком уже 15 лет,
-                                начинал в 2007 году.
-                            </li>
-                            <li>Однако разработчик — не единственная моя профессия.
-                                Еще я преподаватель. Подробнее
-                                об этом расскажу дальше.
-                            </li>
-                            <li>Но помимо вышеперечисленного — я просто человек. Люблю природу, путешевствовать и
-                                рыбачить.
-                                И, конечно же, делиться знаниями!
-                            </li>
-                        </ul>
-                        <div className={style.circles}>
-                            <img src={circles} alt="circle"/>
+                        <div className={style.photo}>
+
+                            <img src={photoAboutMe} alt=""/>
                         </div>
-                        <div className={style.bigCircles}>
-                            <img src={bigCircles} alt="circle"/>
+                        <div className={style.photoBig}>
+                            <img src={photoAboutMeBig} alt=""/>
                         </div>
 
                     </div>
-                    <div className={style.photo}>
-
-                        <img src={photoAboutMe} alt=""/>
+                    <div className={style.titleSpecialWrap}>
+                        <Title title='Основная специализация'/>
                     </div>
-                    <div className={style.photoBig}>
-                        <img src={photoAboutMeBig} alt=""/>
-                    </div>
+                    <div className={style.icons}>
+                        <div className={style.icon}>
+                            <Python className={style.allSvgComponent}/>
+                            <PythonBig className={style.allSvgComponentBig}/>
+                            <p>Python</p>
+                        </div>
+                        <div className={style.icon}>
+                            <Js className={style.allSvgComponent}/>
+                            <JsBig className={style.allSvgComponentBig}/>
+                            <p>JavaScript</p>
+                        </div>
+                        <div className={`${style.icon} ${style.go}`}>
+                            <Go className={`${style.allSvgComponent} ${style.goComponent}`}/>
+                            <GoBig className={`${style.allSvgComponentBig} ${style.goComponent} `}/>
+                            <p>Golang</p>
 
+                        </div>
+
+
+                    </div>
                 </div>
-                <div className={style.titleSpecialWrap}>
-                    <Title title='Основная специализация'/>
-                </div>
-                <div className={style.icons}>
-                    <div className={style.icon}>
-                        <Python className={style.allSvgComponent}/>
-                        <PythonBig className={style.allSvgComponentBig}/>
-                        <p>Python</p>
-                    </div>
-                    <div className={style.icon}>
-                        <Js className={style.allSvgComponent}/>
-                        <JsBig className={style.allSvgComponentBig}/>
-                        <p>JavaScript</p>
-                    </div>
-                    <div className={`${style.icon} ${style.go}`}>
-                        <Go className={`${style.allSvgComponent} ${style.goComponent}`}/>
-                        <GoBig className={`${style.allSvgComponentBig} ${style.goComponent} `}/>
-                        <p>Golang</p>
-
-                    </div>
-
-
-                </div>
-
             </section>
         </>
     );

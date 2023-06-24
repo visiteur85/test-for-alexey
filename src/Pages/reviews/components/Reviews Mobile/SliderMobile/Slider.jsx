@@ -58,7 +58,7 @@ export const MySlider = () => {
                 onChangeIndex={handleChangeSlide}
                 enableMouseEvents
 
-                containerStyle={{width: '83%'}}
+                containerStyle={{width: '80%'}}
 
             >
                 {slides.map((slide, index) => (

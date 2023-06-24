@@ -14,14 +14,15 @@
     left: 0;
     right: 0;
     z-index: 999;
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
     background: white;
-    height: 66px;
+    /*height: 66px;*/
+    padding-bottom: 24px;
 
 
 }
 
-@media (min-width: 920px) {
+@media (min-width: 1024px) {
     .header {
         position: static;
     }
@@ -31,7 +32,7 @@
     margin-top: 100px;
 }
 
-@media (min-width: 920px) {
+@media (min-width: 1024px) {
     .main {
         margin-top: 0;
     }

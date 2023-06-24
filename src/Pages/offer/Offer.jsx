@@ -32,6 +32,8 @@ export const Offer = () => {
             {isModal && <Modal>{isSuccess ? <SuccessForm setSuccess={submitForm}/> :
                 <Form formSubmit={setSuccess} setModal={onModal}/>}</Modal>}
             <section className={style.offerWrapper}>
+                <div className='container'>
+                    <div className={style.wrapper}>
                 <div className={style.offer}>
                     <Lion className={style.lion}/>
                     <LionBig className={style.bigLion}/>
@@ -44,12 +46,12 @@ export const Offer = () => {
                             веб-приложения с помощью Django, работать с базами данных, создавать телеграм-боты,
                             проектировать веб-API, использовать Celery, HTTP, Docker, GitHub и Postman.</p>
                     </div>
-
                     <Diagram/>
-
                 </div>
                 <div className={style.button}>
                     <Button callback={onModal} text="Оставить заявку"/>
+                </div>
+                    </div>
                 </div>
             </section>
         </>
