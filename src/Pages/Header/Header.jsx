@@ -14,7 +14,7 @@ export const Header = () => {
         setNavMenuOpen(prevState => !prevState)
 
     }
-
+//check
     const isOpenMenu = isNavMenuOpen ? style.open : '';
     const isVisibleBurger = isNavMenuOpen ? style.close : "";
     const isVisibleClosedButton = !isNavMenuOpen ? style.close : "";
