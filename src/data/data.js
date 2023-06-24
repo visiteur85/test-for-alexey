@@ -13,4 +13,6 @@ export const menuList = [
 export const videoList = [
     {id: 1, name: "Курс middle за два года введение", url: 'https://www.youtube.com/embed/3IPTxtBCkH8'},
     {id: 2, name: "Курс middle за два года введение", url: 'https://www.youtube.com/embed/3IPTxtBCkH8'},
+    {id: 3, name: "Курс middle за два года введение", url: 'https://www.youtube.com/embed/3IPTxtBCkH8'},
+    {id: 4, name: "Курс middle за два года введение", url: 'https://www.youtube.com/embed/3IPTxtBCkH8'},
 ]
