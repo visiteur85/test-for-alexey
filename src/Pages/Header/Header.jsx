@@ -3,7 +3,7 @@ import style from './header.module.scss';
 import logo from '../../assets/pictures/svg/logo/Лого главная.svg';
 import {ReactComponent as BurgerButton} from '../../assets/pictures/svg/burger/Group 14.svg';
 import {ReactComponent as CloseButton} from '../../assets/pictures/svg/closeButton/Выйти CTA.svg';
-import {NavMenu} from "../../Components/NavMenu/NavMenu";
+import {NavMenu} from "../../Components/navMenu/NavMenu";
 import {menuList} from "../../data/data";
 
 
