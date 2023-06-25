@@ -7,8 +7,15 @@ import {ReactComponent as Mail} from "../../assets/pictures/svg/mail/Vector.svg"
 import {Element} from "react-scroll";
 import {ReactComponent as BigTelegram} from "../../assets/pictures/svg/telegram/Big Telegram Messenger.svg";
 import {ReactComponent as BigMail} from "../../assets/pictures/svg/mail/Mail Messenger.svg";
+import {useLocation, useNavigate} from "react-router-dom";
+import {returnIcon} from "../../assets/icons/return";
 
 export const Footer = () => {
+    const location = useLocation().pathname
+    const navigate = useNavigate()
+    const returnToMainPage = ()=> {
+        navigate('/')
+    }
     return (
         <>
             <Element name='contacts'></Element>
@@ -25,14 +32,17 @@ export const Footer = () => {
                         <p>Минск, Беларусь</p>
 
                     </div>
-                    <div className={style.navMenu}>
-                        <h3 className={style.menuHeading}>
-                            Меню
-                        </h3>
+                        {location === '/' && <div className={style.navMenu}>
+                            <h3 className={style.menuHeading}>
+                                Меню
+                            </h3>
 
-                        <NavMenu block='footer' menuList={menuList}/>
+                            <NavMenu block='footer' menuList={menuList}/>
 
-                    </div>
+                        </div>
+
+                        }
+
                     <div className={style.links}>
                         <div className={style.messenger}>
                             <div className={style.telegram}>
