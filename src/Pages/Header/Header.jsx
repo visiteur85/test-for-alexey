@@ -10,6 +10,7 @@ import {menuList} from "../../data/data";
 export const Header = () => {
     const [isNavMenuOpen, setNavMenuOpen] = useState(false);
 
+
     const onClickMenuChange = () => {
         setNavMenuOpen(prevState => !prevState)
 
@@ -23,6 +24,7 @@ export const Header = () => {
     return (
 
         <section className={style.header}>
+
             <div className='container'>
             <div className={style.header__inner}>
                 <div className={style.logo}>

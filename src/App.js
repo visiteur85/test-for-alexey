@@ -10,6 +10,8 @@ import {AboutSchool} from "./Pages/aboutScool/AboutSchool";
 import {Offer} from "./Pages/offer/Offer";
 import {Footer} from "./Pages/footer/Footer";
 import {Video} from "./Pages/video/Video";
+import {Route, Routes} from "react-router-dom";
+import {VideoLessons} from "./Pages/videoLessons/VideoLessons";
 
 
 function App() {
@@ -18,22 +20,26 @@ function App() {
             <header className='header'>
                 <Header/>
             </header>
-            <main className='main'>
-                <Avatar/>
-                <Video/>
-                <div className='background'>
-                    <AboutMe/>
-                </div>
+            <Routes>
+                <Route path={'/'} element={<main className='main'>
+                    <Avatar/>
+                    <Video/>
+                    <div className='background'>
+                        <AboutMe/>
+                    </div>
 
-                <Teaching/>
-                <div className='background'>
-                    <AboutSchool/>
-                </div>
-                <Reviews/>
-                <div className='background'>
-                    <Offer/>
-                </div>
-            </main>
+                    <Teaching/>
+                    <div className='background'>
+                        <AboutSchool/>
+                    </div>
+                    <Reviews/>
+                    <div className='background'>
+                        <Offer/>
+                    </div>
+                </main>}/>
+                <Route path={'/videoLessons'} element={<VideoLessons/>}/>
+
+            </Routes>
             <footer className='footer'>
                 <Footer/>
             </footer>
