@@ -38,7 +38,7 @@ function App() {
                     </div>
                 </main>}/>
                 <Route path={'/videoLessons'} element={
-                    <div className='background'>
+                    <div>
                     <VideoLessons/>
                     </div>
                 }/>
