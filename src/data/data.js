@@ -26,25 +26,31 @@ export const videoLessons = [
     {
         id: 1, title: "Python", svg: pythonIcon, videoLessonsList:
             [
-                {id: 11, name: 'Урок 1 Python', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: true},
-                {id: 12, name: 'Урок 2 Python', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: false},
-                {id: 13, name: 'Урок 3 Python', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: false},
+                {id: 11, name: 'Урок 1', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: true},
+                {id: 12, name: 'Урок 2', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: false},
+                {id: 13, name: 'Урок 3', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: false},
+                {id: 14, name: 'Урок 4', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: false},
+                {id: 15, name: 'Урок 5', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: false},
             ]
     },
     {
         id: 2, title: "Js (Html/Css)", svg: jsIcon, videoLessonsList:
             [
-                {id: 21, name: 'Урок 1 Js', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: true},
-                {id: 22, name: 'Урок 2 Js', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: false},
-                {id: 12, name: 'Урок 3 Js', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: false},
+                {id: 21, name: 'Урок 1', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: true},
+                {id: 22, name: 'Урок 2', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: false},
+                {id: 23, name: 'Урок 3', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: false},
+                {id: 24, name: 'Урок 4', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: false},
+                {id: 25, name: 'Урок 5', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: false},
             ]
     },
     {
         id: 3, title: "Golang", svg: goIcon, videoLessonsList:
             [
-                {id: 31, name: 'Урок 1 Go', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: true},
-                {id: 32, name: 'Урок 2 Go', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: false},
-                {id: 33, name: 'Урок 3 Go', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: false},
+                {id: 31, name: 'Урок 1', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: true},
+                {id: 32, name: 'Урок 2', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: false},
+                {id: 33, name: 'Урок 3', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: false},
+                {id: 34, name: 'Урок 4', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: false},
+                {id: 35, name: 'Урок 5', url: 'https://www.youtube.com/embed/3IPTxtBCkH8', isShown: false},
             ]
     },
 ]

@@ -8,13 +8,20 @@ export const VideoLessons = () => {
 
     const onShowVideoLessons = (id) => {
         videoLessons.map((tech) => {
-            return tech.id === id ? setChosenTech(tech.videoLessonsList) : ''
+            return tech.id === id ? setChosenTech(tech) : ''
         })
     }
 
     const changeActiveLesson = (id) => {
-        chosenTech && setChosenTech(chosenTech.map((lesson)=> { return lesson.id === id ? {...lesson, isShown:true} : {...lesson, isShown: false}} ))
-
+        if (chosenTech && chosenTech.videoLessonsList) {
+            const updatedTech = {
+                ...chosenTech,
+                videoLessonsList: chosenTech.videoLessonsList.map((lesson) => {
+                    return lesson.id === id ? { ...lesson, isShown: true } : { ...lesson, isShown: false };
+                })
+            };
+            setChosenTech(updatedTech);
+        }
     }
 
     return (
@@ -36,8 +43,9 @@ export const VideoLessons = () => {
                         </div>
                     )}
                 </div>
-                {chosenTech && chosenTech.map(({id, name, url, isShown}) =>
-                    <div key={id}>{<Technology id={id} name={name} isShown={isShown} url={url} callback={()=>{changeActiveLesson(id)}} />}</div>)}
+                {chosenTech && <h3>Уроки по {chosenTech.title}</h3>}
+                {chosenTech && chosenTech.videoLessonsList.map(({id, name, url, isShown}) =>
+                    <div className={style.oneTech} key={id}>{<Technology  id={id} name={name} isShown={isShown} url={url} callback={()=>{changeActiveLesson(id)}} />}</div>)}
             </div>
         </section>
     );
@@ -50,8 +58,8 @@ export const Technology = ({id, name, url, isShown, callback}) => {
     }
     return (
         <div className={style.technology}>
-            <div onClick={changeActiveVideo}>{name}</div>
-            {isShown && <div>
+            <div onClick={changeActiveVideo} className={`${style.lesson} ${isShown ? style.active : ''}`}>{name}</div>
+            {isShown && <div className={style.frame}>
                 <iframe src={url} title="YouTube video player"
                         allow="accelerometer; autoplay;  gyroscope; picture-in-picture; web-share"
                         allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
