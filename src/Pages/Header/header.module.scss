@@ -28,6 +28,10 @@
 
   }
 }
+.returnMainPage {
+  cursor: pointer;
+
+}
 
 .burgerButton:active path {
   stroke: $darkGreen;
@@ -81,6 +85,3 @@
   }
 }
 
-.returnMainPage {
-  cursor: pointer;
-}

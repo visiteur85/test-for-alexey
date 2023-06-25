@@ -20,7 +20,7 @@ export const Header = () => {
 
     }
 
-    const returnToMainPage = ()=> {
+    const returnToMainPage = () => {
         navigate('/')
     }
     const isOpenMenu = isNavMenuOpen ? style.open : '';
@@ -39,9 +39,9 @@ export const Header = () => {
                     </div>
                     {location === '/videoLessons' ?
                         <div className={style.returnMainPage} onClick={returnToMainPage}>
-                        <img width='20' height='20' src={`data:image/svg+xml,${encodeURIComponent(returnIcon)}`}
-                             alt=""/>
-                         На главную
+                            <img width='20' height='20' src={`data:image/svg+xml,${encodeURIComponent(returnIcon)}`}
+                                 alt=""/>
+                            <p>На главную</p>
                         </div>
                         : <>
                             <div className={style.navMenu}>
