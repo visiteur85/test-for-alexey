@@ -4,7 +4,7 @@
   padding: 80px 0 110px 0;
   min-width: 375px;
   @media(min-width: 768px) {
-padding-bottom: 200px;
+    padding-bottom: 200px;
   }
 
   @media(min-width: 1024px) {
@@ -71,7 +71,7 @@ padding-bottom: 200px;
       .nameOfTech {
         color: #849C9C;
         @media(min-width: 1024px) {
-        font-weight: 400;
+          font-weight: 400;
           font-size: 24px;
 
         }
@@ -80,6 +80,7 @@ padding-bottom: 200px;
 
 
   }
+
   h3 {
     margin-bottom: 30px;
     text-align: center;
@@ -97,6 +98,7 @@ padding-bottom: 200px;
     }
 
   }
+
   .oneTech {
     margin-bottom: 20px;
 
@@ -108,46 +110,3 @@ padding-bottom: 200px;
 }
 
 
-
-// для  Technology
-.technology {
-.lesson {
-  cursor: pointer;
-  @media(min-width: 1024px) {
-font-weight: 500;
-    font-size: 20px;
-
-  }
-}
-  .frame {
-    position: absolute;
-    top: 260px;
-    right: 10px;
-    width: 80%;
-    height: 250px;
-    @media(min-width: 480px) {
-      top: 300px;
-
-    }
-    @media(min-width: 768px) {
-top: 340px;
-      height: 300px;
-    }
-    @media(min-width: 1024px) {
-      top: 520px;
-      height: 500px;
-
-    }
-  }
-
-}
-
-
-.active {
-
-color: $darkGreen;
-}
-
-iframe {
-  border-radius: 14px;
-}
