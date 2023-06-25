@@ -20,10 +20,12 @@
 
     @media(min-width: 1010px) {
       margin-bottom: 0;
-      //white-space: nowrap;
       &:not(:last-child) {
         margin-bottom: 0;
         margin-right: 32px;
+      }
+      &:hover {
+        text-decoration: underline;
       }
 
     }

@@ -4,10 +4,6 @@
   "private": true,
   "homepage": "https://visiteur85.github.io/test-for-alexey",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "gh-pages": "^5.0.0",
     "node-sass": "^7.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -19,8 +15,7 @@
     "react-swipeable-views": "^0.14.0",
     "react-swipeable-views-utils": "^0.14.0",
     "slick-carousel": "^1.8.1",
-    "uuid": "^9.0.0",
-    "web-vitals": "^2.1.4"
+    "uuid": "^9.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -29,6 +24,9 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   },
   "eslintConfig": {
     "extends": [
