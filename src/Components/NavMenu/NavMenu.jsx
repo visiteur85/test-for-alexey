@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './navMenu.module.scss'
 import {Link} from 'react-scroll';
+import {NavLink} from "react-router-dom";
 
 export const NavMenu = ({menuList, callback, block}) => {
 
@@ -8,9 +9,11 @@ export const NavMenu = ({menuList, callback, block}) => {
     return (
         <nav>
             <ul className={`${block === 'footer' ? style.blockFooter : style.list}`}>
-                {menuList.map(({id, path, name}) => (
+                {menuList.map(({id, path, name, isRoute}) => (
                     <li className={`${block === 'footer' ? style.blockFooter__item : style.list__item}`} key={id}>
-                        <Link onClick={callback} offset={-45} smooth={true} duration={500} to={path}>{name} </Link>
+                        {isRoute ? <NavLink onClick={callback} to={'/videoLessons'}>{name}</NavLink> :
+                            <Link onClick={callback} offset={-45} smooth={true} duration={500} to={path}>{name} </Link>
+                        }
                     </li>
                 ))}
             </ul>

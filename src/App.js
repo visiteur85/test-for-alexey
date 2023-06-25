@@ -37,7 +37,11 @@ function App() {
                         <Offer/>
                     </div>
                 </main>}/>
-                <Route path={'/videoLessons'} element={<VideoLessons/>}/>
+                <Route path={'/videoLessons'} element={
+                    <div className='background'>
+                    <VideoLessons/>
+                    </div>
+                }/>
 
             </Routes>
             <footer className='footer'>
