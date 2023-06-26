@@ -10,7 +10,7 @@ import {AboutSchool} from "./Pages/aboutScool/AboutSchool";
 import {Offer} from "./Pages/offer/Offer";
 import {Footer} from "./Pages/footer/Footer";
 import {Video} from "./Pages/video/Video";
-import {Route, Routes} from "react-router-dom";
+import {Navigate, Route, Routes} from "react-router-dom";
 import {VideoLessons} from "./Pages/videoLessons/VideoLessons";
 
 
@@ -50,6 +50,7 @@ function App() {
                     <VideoLessons/>
                     </div>
                 }/>
+                <Route path='*' element={<Navigate to={'/'}/>}/>
 
             </Routes>
             <footer className='footer'>
