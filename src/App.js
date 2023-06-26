@@ -5,7 +5,7 @@ import {AboutMe} from "./Pages/aboutMe/AboutMe";
 
 import {Teaching} from "./Pages/teaching/Teaching";
 import Reviews from "./Pages/reviews/Reviews";
-import React from "react";
+import React, {useState} from "react";
 import {AboutSchool} from "./Pages/aboutScool/AboutSchool";
 import {Offer} from "./Pages/offer/Offer";
 import {Footer} from "./Pages/footer/Footer";
@@ -15,10 +15,18 @@ import {VideoLessons} from "./Pages/videoLessons/VideoLessons";
 
 
 function App() {
+    // контроль состояния открытия или закрытия бурег меню. он был вынесен сюда, посколькку мы должны контролировать это
+    // состояние не только в хеадер, но и в футер
+    const [isNavMenuOpen, setNavMenuOpen] = useState(false);
+
+    const controlBurgerMenu = (isOpen)=> {
+        setNavMenuOpen(isOpen)
+    }
+
     return (
         <div className="App">
             <header className='header'>
-                <Header/>
+                <Header setNavMenuOpen={controlBurgerMenu} isNavMenuOpen={isNavMenuOpen}/>
             </header>
             <Routes>
                 <Route path={'/'} element={<main className='main'>
@@ -45,7 +53,7 @@ function App() {
 
             </Routes>
             <footer className='footer'>
-                <Footer/>
+                <Footer setNavMenuOpen={controlBurgerMenu}/>
             </footer>
         </div>
     );
