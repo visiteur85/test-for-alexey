@@ -12,10 +12,11 @@
 
   .infoPhotoWrapp {
     margin-bottom: 56px;
-    @media(min-width: 1024px) {
+    @media(min-width: 1240px) {
       display: flex;
       justify-content: space-between;
       margin-bottom: 121px;
+      gap: 50px;
     }
 
     .info {
@@ -96,6 +97,10 @@
 
     .photo {
       padding-left: 59px;
+      @media(min-width: 480px) {
+        width: 75%;
+        margin: 0 auto 20px auto;
+      }
       @media(min-width: 768px) {
         //width: 70%;
         // margin: 0 auto;
@@ -114,12 +119,14 @@
     .photoBig {
       display: none;
       @media(min-width: 1024px) {
+        width: 45%;
         display: block;
-        margin-left: 70px;
-        img {
-          height: 100%;
-        }
-
+      margin: 20px auto 0 auto;
+      }
+      @media(min-width: 1240px) {
+        width: 35%;
+        display: block;
+        margin: 0 auto 0 auto;
       }
     }
 

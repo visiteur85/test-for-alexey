@@ -85,13 +85,13 @@
 .mainPhoto {
   //padding-right: 62px;
   z-index: 0;
+  @media(min-width: 480px) {
+    width: 75%;
+    margin: 0 auto 20px auto;
+  }
   @media(min-width: 768px) {
-    //width: 70%;
-    // margin: 0 auto;
     width: 50%;
     margin: 0 auto 20px auto;
-
-
   }
   @media(min-width: 1024px) {
     display: none;
