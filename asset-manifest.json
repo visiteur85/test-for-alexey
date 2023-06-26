@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/test-for-alexey/static/css/main.43bcc949.css",
+    "main.css": "/test-for-alexey/static/css/main.f8116caa.css",
     "main.js": "/test-for-alexey/static/js/main.b764d17a.js",
     "static/media/BigAvatar.png": "/test-for-alexey/static/media/BigAvatar.82cc59c7689fb6ea0a1a.png",
     "static/media/Big Фото Преподавание.png": "/test-for-alexey/static/media/Big Фото Преподавание.af575dbf243194c91732.png",
@@ -41,11 +41,11 @@
     "static/media/Group 14.svg": "/test-for-alexey/static/media/Group 14.fb4cb9e5486bb484b63bf5f84f03c09a.svg",
     "static/media/Vector 3.svg": "/test-for-alexey/static/media/Vector 3.67c4ce26153f8c6e96b1.svg",
     "static/media/Vector 3 white.svg": "/test-for-alexey/static/media/Vector 3 white.b522c7bd2e2405dfcb76.svg",
-    "main.43bcc949.css.map": "/test-for-alexey/static/css/main.43bcc949.css.map",
+    "main.f8116caa.css.map": "/test-for-alexey/static/css/main.f8116caa.css.map",
     "main.b764d17a.js.map": "/test-for-alexey/static/js/main.b764d17a.js.map"
   },
   "entrypoints": [
-    "static/css/main.43bcc949.css",
+    "static/css/main.f8116caa.css",
     "static/js/main.b764d17a.js"
   ]
 }
