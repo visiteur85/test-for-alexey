@@ -8,25 +8,17 @@ import Scroll, {Element} from "react-scroll";
 import {ReactComponent as BigTelegram} from "../../assets/pictures/svg/telegram/Big Telegram Messenger.svg";
 import {ReactComponent as BigMail} from "../../assets/pictures/svg/mail/Mail Messenger.svg";
 import {useLocation, useNavigate} from "react-router-dom";
+import {
+    routingToMAinPAgeScrollToElementAndCloseNavMenu
+} from "../../utils/routingToMAinPAgeScrollToElementAndCloseNavMenu";
 
 export const Footer = ({setNavMenuOpen}) => {
     const location = useLocation().pathname;
     const navigate = useNavigate()
 
-    let Scroll = require('react-scroll');
-    let scroller = Scroll.scroller;
 
-    const routingToMAinPAgeScrollToElementAndCloseNavMenu = (path) => {
-        setNavMenuOpen(false)
-        if (location === '/videoLessons') {
-            navigate('/');
-            setTimeout(() => {
-                scroller.scrollTo(path, {
-                    smooth: true,
-                })
-            }, 100)
-
-        }
+    const getPath = (path) => {
+        routingToMAinPAgeScrollToElementAndCloseNavMenu(setNavMenuOpen, location, path, navigate)
     }
 
 
@@ -51,7 +43,7 @@ export const Footer = ({setNavMenuOpen}) => {
                                 Меню
                             </h3>
 
-                            <NavMenu callback={routingToMAinPAgeScrollToElementAndCloseNavMenu} block='footer'
+                            <NavMenu callback={getPath} block='footer'
                                      menuList={menuList}/>
 
                         </div>

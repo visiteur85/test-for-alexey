@@ -6,12 +6,13 @@ import {ReactComponent as CloseButton} from '../../assets/pictures/svg/closeButt
 import {NavMenu} from "../../Components/navMenu/NavMenu";
 import {menuList} from "../../data/data";
 import {useLocation, useNavigate} from "react-router-dom";
+import {
+    routingToMAinPAgeScrollToElementAndCloseNavMenu
+} from "../../utils/routingToMAinPAgeScrollToElementAndCloseNavMenu";
 
 
 export const Header = ({setNavMenuOpen, isNavMenuOpen}) => {
 
-    let Scroll = require('react-scroll');
-    let scroller = Scroll.scroller;
 
     const location = useLocation().pathname
     const navigate = useNavigate()
@@ -22,17 +23,9 @@ export const Header = ({setNavMenuOpen, isNavMenuOpen}) => {
 
     };
 
-    const routingToMAinPAgeScrollToElementAndCloseNavMenu = (path) => {
-        setNavMenuOpen(false)
-        if (location === '/videoLessons') {
-            navigate('/');
-            setTimeout(() => {
-                scroller.scrollTo(path, {
-                    smooth: true,
-                })
-            }, 100)
 
-        }
+    const getPath = (path) => {
+        routingToMAinPAgeScrollToElementAndCloseNavMenu(setNavMenuOpen, location, path, navigate)
     }
 
 
@@ -57,7 +50,7 @@ export const Header = ({setNavMenuOpen, isNavMenuOpen}) => {
                                              onClick={() => onClickMenuChange(false)}/>
                             </div>
                             <div className={`${style.navMenuMobile__menu} ${isOpenMenu}`}>
-                                <NavMenu callback={routingToMAinPAgeScrollToElementAndCloseNavMenu}
+                                <NavMenu callback={getPath}
                                          menuList={menuList}/></div>
                         </div>
                         <div className={`${isVisibleBurger} `}>
@@ -66,7 +59,7 @@ export const Header = ({setNavMenuOpen, isNavMenuOpen}) => {
 
                     </div>
                     <div className={style.desktopMenu}>
-                        <NavMenu menuList={menuList} callback={routingToMAinPAgeScrollToElementAndCloseNavMenu}/>
+                        <NavMenu menuList={menuList} callback={getPath}/>
                     </div>
 
 
