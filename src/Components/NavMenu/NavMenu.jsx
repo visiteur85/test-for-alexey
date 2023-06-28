@@ -5,7 +5,7 @@ import {NavLink} from "react-router-dom";
 
 export const NavMenu = ({menuList, callback, block}) => {
 
-    const routingAndChangeNavMenu  = (path)=> {
+    const routingAndChangeNavMenu = (path) => {
         callback(path)
     };
 
@@ -16,7 +16,8 @@ export const NavMenu = ({menuList, callback, block}) => {
                 {menuList.map(({id, path, name, isRoute}) => (
                     <li className={`${block === 'footer' ? style.blockFooter__item : style.list__item}`} key={id}>
                         {isRoute ? <NavLink onClick={routingAndChangeNavMenu} to={'/videoLessons'}>{name}</NavLink> :
-                            <Link onClick={()=>routingAndChangeNavMenu(path)} offset={-45} smooth={true} duration={500} to={path}>{name} </Link>
+                            <Link onClick={() => routingAndChangeNavMenu(path)} offset={-45} smooth={true}
+                                  duration={500} to={path}>{name} </Link>
                         }
                     </li>
                 ))}

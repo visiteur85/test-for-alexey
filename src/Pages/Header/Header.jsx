@@ -8,7 +8,6 @@ import {menuList} from "../../data/data";
 import {useLocation, useNavigate} from "react-router-dom";
 
 
-
 export const Header = ({setNavMenuOpen, isNavMenuOpen}) => {
 
     let Scroll = require('react-scroll');
@@ -51,24 +50,24 @@ export const Header = ({setNavMenuOpen, isNavMenuOpen}) => {
                     <div className={style.logo}>
                         <img className={style.logo} src={logo} alt="logo"/>
                     </div>
-                            <div className={style.navMenu}>
-                                <div className={style.navMenuMobile}>
-                                    <div className={`${isVisibleClosedButton} `}>
-                                        <CloseButton className={style.closeButton}
-                                                     onClick={()=>onClickMenuChange(false)}/>
-                                    </div>
-                                    <div className={`${style.navMenuMobile__menu} ${isOpenMenu}`}>
-                                        <NavMenu callback={routingToMAinPAgeScrollToElementAndCloseNavMenu}
-                                                 menuList={menuList}/></div>
-                                </div>
-                                <div className={`${isVisibleBurger} `}>
-                                    <BurgerButton onClick={()=>onClickMenuChange(true)} className={style.burgerButton}/>
-                                </div>
+                    <div className={style.navMenu}>
+                        <div className={style.navMenuMobile}>
+                            <div className={`${isVisibleClosedButton} `}>
+                                <CloseButton className={style.closeButton}
+                                             onClick={() => onClickMenuChange(false)}/>
+                            </div>
+                            <div className={`${style.navMenuMobile__menu} ${isOpenMenu}`}>
+                                <NavMenu callback={routingToMAinPAgeScrollToElementAndCloseNavMenu}
+                                         menuList={menuList}/></div>
+                        </div>
+                        <div className={`${isVisibleBurger} `}>
+                            <BurgerButton onClick={() => onClickMenuChange(true)} className={style.burgerButton}/>
+                        </div>
 
-                            </div>
-                            <div className={style.desktopMenu}>
-                                <NavMenu menuList={menuList} callback={routingToMAinPAgeScrollToElementAndCloseNavMenu}/>
-                            </div>
+                    </div>
+                    <div className={style.desktopMenu}>
+                        <NavMenu menuList={menuList} callback={routingToMAinPAgeScrollToElementAndCloseNavMenu}/>
+                    </div>
 
 
                 </div>
