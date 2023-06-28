@@ -5,11 +5,14 @@ import {ReactComponent as BurgerButton} from '../../assets/pictures/svg/burger/G
 import {ReactComponent as CloseButton} from '../../assets/pictures/svg/closeButton/Выйти CTA.svg';
 import {NavMenu} from "../../Components/navMenu/NavMenu";
 import {menuList} from "../../data/data";
-import {returnIcon} from "../../assets/icons/return";
 import {useLocation, useNavigate} from "react-router-dom";
 
 
+
 export const Header = ({setNavMenuOpen, isNavMenuOpen}) => {
+
+    let Scroll = require('react-scroll');
+    let scroller = Scroll.scroller;
 
     const location = useLocation().pathname
     const navigate = useNavigate()
@@ -18,11 +21,22 @@ export const Header = ({setNavMenuOpen, isNavMenuOpen}) => {
     const onClickMenuChange = (isOpen) => {
         setNavMenuOpen(isOpen)
 
+    };
+
+    const routingToMAinPAgeScrollToElementAndCloseNavMenu = (path) => {
+        setNavMenuOpen(false)
+        if (location === '/videoLessons') {
+            navigate('/');
+            setTimeout(() => {
+                scroller.scrollTo(path, {
+                    smooth: true,
+                })
+            }, 100)
+
+        }
     }
 
-    const returnToMainPage = () => {
-        navigate('/')
-    }
+
     const isOpenMenu = isNavMenuOpen ? style.open : '';
     const isVisibleBurger = isNavMenuOpen ? style.close : "";
     const isVisibleClosedButton = !isNavMenuOpen ? style.close : "";
@@ -37,13 +51,6 @@ export const Header = ({setNavMenuOpen, isNavMenuOpen}) => {
                     <div className={style.logo}>
                         <img className={style.logo} src={logo} alt="logo"/>
                     </div>
-                    {location === '/videoLessons' ?
-                        <div className={style.returnMainPage} onClick={returnToMainPage}>
-                            <img width='20' height='20' src={`data:image/svg+xml,${encodeURIComponent(returnIcon)}`}
-                                 alt=""/>
-                            <p>На главную</p>
-                        </div>
-                        : <>
                             <div className={style.navMenu}>
                                 <div className={style.navMenuMobile}>
                                     <div className={`${isVisibleClosedButton} `}>
@@ -51,7 +58,7 @@ export const Header = ({setNavMenuOpen, isNavMenuOpen}) => {
                                                      onClick={()=>onClickMenuChange(false)}/>
                                     </div>
                                     <div className={`${style.navMenuMobile__menu} ${isOpenMenu}`}>
-                                        <NavMenu callback={onClickMenuChange}
+                                        <NavMenu callback={routingToMAinPAgeScrollToElementAndCloseNavMenu}
                                                  menuList={menuList}/></div>
                                 </div>
                                 <div className={`${isVisibleBurger} `}>
@@ -60,9 +67,8 @@ export const Header = ({setNavMenuOpen, isNavMenuOpen}) => {
 
                             </div>
                             <div className={style.desktopMenu}>
-                                <NavMenu menuList={menuList} callback={onClickMenuChange}/>
+                                <NavMenu menuList={menuList} callback={routingToMAinPAgeScrollToElementAndCloseNavMenu}/>
                             </div>
-                        </>}
 
 
                 </div>
